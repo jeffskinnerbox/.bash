@@ -78,6 +78,7 @@ function rmt {
 # Function to run upon exit of shell
 function _exit {
     echo -e "${BRed}Hasta la vista, baby${NC}"
+    sleep 1
 }
 trap _exit EXIT
 

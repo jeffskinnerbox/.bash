@@ -20,7 +20,7 @@ export EDITOR=vim               # set the default editor to vim.
 
 ################################## Set Paths ##################################
 # Set PATH so it includes user's private bin if it exists
-if [ -d "${HOME}/bin" ] ; then
+if [ -d "${HOME}/bin" ]; then
     PATH="${HOME}/bin:${PATH}"
 fi
 
@@ -35,7 +35,7 @@ if [ -d "${HOME}/info" ]; then
 fi
 
 # Set PYTHONPATH so it includes user's private bin if it exists
-if [ -d "${HOME}/bin" ] ; then
+if [ -d "${HOME}/bin" ]; then
     PYTHONPATH="${HOME}/bin:${PYTHONPATH}"
 fi
 

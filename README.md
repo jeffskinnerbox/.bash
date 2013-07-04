@@ -1,4 +1,9 @@
 # Bash Dotfiles
+**Bash Dotfiles** is a mash up of my bash profile/resource files, scripts, functions,
+aliases and other bash stuff I have created, found, or more likely ripped off from others.
+Therefore, out of respect, guilt, and a morbid fear of lawyers, I maintain a reasonably
+complete list of sources.  Check out the referances / sources and you may find
+a few additonal gems.
 
 ## Bash
 According to the bash man page, .bash_profile is executed for login shells,
@@ -12,8 +17,9 @@ machine and open a new terminal window (xterm) inside Gnome or KDE, then
 you start a new bash instance by typing /bin/bash in a terminal.
 
 ### References / Sources
- - http://ss64.com/bash/shopt.html
- - http://tldp.org/LDP/abs/html/sample-bashrc.html
+
+* [shopt manual page](http://ss64.com/bash/shopt.html)
+* [Advanced Bash-Scripting Guida: Samples](http://tldp.org/LDP/abs/html/sample-bashrc.html)
 
 ## Aliases and Functions
 A Bash alias is essentially nothing more than a keyboard shortcut, an
@@ -28,81 +34,45 @@ when a task repeats with only slight variations in procedure, then consider
 using a function.
 
 ### References / Sources
- - http://tldp.org/LDP/abs/html/aliases.html
- - http://tldp.org/LDP/abs/html/functions.html
- - http://hayne.net/MacDev/Bash/aliases.bash
- - http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html
+
+* [Advanced Bash-Scripting Guide: Aliases](http://tldp.org/LDP/abs/html/aliases.html})
+* [Advanced Bash-Scripting Guide: Functions](http://tldp.org/LDP/abs/html/functions.html)
+* [Hayne of Tintagel](http://hayne.net/MacDev/Bash/aliases.bash)
+* [30 Handy Bash Shell Aliases For Linux](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
   
 ## Install
- To clone these Bash scripts and use them on another system, execute the following:
- ```sh
- cd ~
- git clone https://github.com/jeffskinnerbox/dotbash.git ~/.bash
- ln -s ~/.bash/bash_aliases ~/.bash_aliases
- ln -s ~/.bash/bash_logout ~/.bash_logout
- ln -s ~/.bash/bash_profile ~/.bash_profile
- ln -s ~/.bash/bashrc ~/.bashrc
- cd ~/.bash
- ```
+To clone these Bash scripts and use them on another system, execute the following:
 
-# Managing the Git Repository and GitHub
-
-## Creating the GitHub Repository
-Goto GitHub and create the new repository
-```sh
-goto https://github.com/jeffskinnerbox
-<create empty repository called 'dotbash'>
-```
-
-## Creating the Local Git Repository
-Make the .bash directory, move into it, and initialize it as a git repository
-```sh
-cd ~
-mkdir .bash
-cd .bash
-git init
-<Create a README, bash_aliases, bash_logout, bash_profile, and bashrc files>
-git add .
-git commit -m 'Initial creation of Bash scripts for Linux box'
-```
-
-## Loading the GitHub Repository for the First Time
-Within the ~.bash directory, use git to load the files to GitHub
-```sh
-cd ~/.bash
-git remote add origin https://github.com/jeffskinnerbox/dotbash.git
-git push -u origin master
-```
-
+    cd ~
+    git clone https://github.com/jeffskinnerbox/dotbash.git ~/.bash
+    ln -s ~/.bash/bash_aliases ~/.bash_aliases
+    ln -s ~/.bash/bash_logout ~/.bash_logout
+    ln -s ~/.bash/bash_profile ~/.bash_profile
+    ln -s ~/.bash/bashrc ~/.bashrc
+    cd ~/.bash
 
 # TO DO LIST
- COLORS-Dircolors - http://www.linux-sxs.org/housekeeping/dircolor.html
- http://ubuntuforums.org/showthread.php?t=41538
- 
- BASH shell aliases I can't live without - http://bicchi.blogspot.com/2007/03/bash-shell-aliases-i-cant-leave-without.html
- Git Basics - Tips and Tricks - http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks
- 
- 
 
- see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
- for examples
+* [COLORS-Dircolors](http://www.linux-sxs.org/housekeeping/dircolor.html)
+* [BASH shell aliases I can't live without](http://bicchi.blogspot.com/2007/03/bash-shell-aliases-i-cant-leave-without.html)
+* [Git Basics - Tips and Tricks](http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks)
+* [bash-it](https://github.com/revans/bash-it)
+* [Advanced Bash-Scripting GuideAdvanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/)
+* [FULL 256 COLOR SUPPORT FOR VIM AND/OR XTERM ON UBUNTU 12.04](http://emerg3nc3.wordpress.com/2012/07/28/full-256-color-support-for-vim-andor-xterm-on-ubuntu-12-04/)
+* [Working more productively with bash](http://www.caliban.org/bash)
+* [SHELLdorado - your UNIX shell scripting resource](http://www.shelldorado.com/scripts/categories.html)
+* [dotfiles.org](http://www.dotfiles.org)
 
- Change / Setup bash custom prompt
-   http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html
-   http://www.maketecheasier.com/8-useful-and-interesting-bash-prompts/2009/09/04
-   https://wiki.archlinux.org/index.php/Color_Bash_Prompt
-   http://www.thegeekstuff.com/2008/09/bash-shell-ps1-10-examples-to-make-your-linux-prompt-like-angelina-jolie/
-   sane bash environment - https://github.com/rtomayko/dotfiles/blob/rtomayko/.bashrc
+Change / Setup bash custom prompt
 
-   FULL 256 COLOR SUPPORT FOR VIM AND/OR XTERM ON UBUNTU 12.04 - http://emerg3nc3.wordpress.com/2012/07/28/full-256-color-support-for-vim-andor-xterm-on-ubuntu-12-04/
- 
-  http://tldp.org/LDP/abs/html/index.html
-  http://www.caliban.org/bash
-  http://www.shelldorado.com/scripts/categories.html
-  http://www.dotfiles.org
- 
+* [hange / Setup bash custom prompt](http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
+* [8 Useful and Interesting Bash Prompts](http://www.maketecheasier.com/8-useful-and-interesting-bash-prompts/2009/09/04)
+* [Color Bash Prompt](https://wiki.archlinux.org/index.php/Color_Bash_Prompt)
+* [Bash Shell PS1: 10 Examples to Make Your Linux Prompt like Angelina Jolie](http://www.thegeekstuff.com/2008/09/bash-shell-ps1-10-examples-to-make-your-linux-prompt-like-angelina-jolie/)
+* [sane bash environment](https://github.com/rtomayko/dotfiles/blob/rtomayko/.bashrc)
+  
  Shell Prompt - for many examples, see:
-       http://www.debian-administration.org/articles/205
-       http://www.askapache.com/linux/bash-power-prompt.html
-       http://tldp.org/HOWTO/Bash-Prompt-HOWTO
-       https://github.com/nojhan/liquidprompt
+
+* [Fancy Bash Prompts](http://www.debian-administration.org/articles/205)
+* [Crazy POWERFUL Bash Prompt](http://www.askapache.com/linux/bash-power-prompt.html)
+* [Bash Prompt HOWTO](http://tldp.org/HOWTO/Bash-Prompt-HOWTO)
