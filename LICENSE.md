@@ -12,6 +12,8 @@ stuff sufficiently challeging, who needs all this legal mumbo jumbo!
 
 In the mean time, how about this:
 
+===
+
 Copyright (c) 2013 Jeffrey C. Irland
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of 

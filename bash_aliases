@@ -11,11 +11,11 @@ shopt -s expand_aliases
 # Short-hand commands for commonly used programs
 alias clr='clear'                   # clear the screen
 alias cls='clear'                   # clear the screen
-alias vi='vim -p'                   # When using Vim, open multiple files within separate tabs
+alias vi='vim -g -p'                # When using Vim, open in GUI mode and multiple files within separate tabs
 alias chrome='chromium-browser'     # Linux version of Chrome web browser
 alias grc='gnuradio-companion'      # Short hand for GNU Radio Companion
-alias du='du -kh'                   # Makes a more readable output.
-alias df='df -kTh'                  # Makes a more readable output.
+alias du='du -kh'                   # Makes a more readable output of estimated file space usage
+alias df='df -kTh'                  # Makes a more readable output of file system disk space usage
 alias ports='netstat -tulanp'       # list all TCP/UDP port
 alias update='sudo apt-get update && sudo apt-get upgrade'  # update on one command 
  
@@ -70,14 +70,21 @@ alias cd......='cd ../../../../..'
 
 ################################## Functions ##################################
 
-# remove files to tmp directory
+# Remove files to Trash (this located at ~/.local/share/Trash) instead of deleting them.
+# Trash is part of the FreeDesktop.org Trash Specification. It remembers the name,
+# original path, deletion date, and permissions of each trashed file.
+# Also see utilities list-trash, restore-trash, and empty-trash.
 function rmt {
+    trash $*
+}
+
+function rmtmp {
     mv $* $HOME/tmp
 }
 
 # Function to run upon exit of shell
 function _exit {
-    echo -e "${BRed}Hasta la vista, baby${NC}"
+    echo -e "${BRed}Hasta la vista, baby!${NC}"
     sleep 1
 }
 trap _exit EXIT

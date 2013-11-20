@@ -78,8 +78,7 @@ ALERT=${BWhite}${On_Red} # Bold White on red background
 
 
 
-#############################
-#############################
+################################################################################
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
