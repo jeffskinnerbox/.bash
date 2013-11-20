@@ -1,0 +1,25 @@
+#!/bin/bash
+#
+# Check out these posts:
+#   Using Git and Github to Manage Your Dotfiles - http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
+#   Managing dot files with Git - http://blog.sanctum.geek.nz/managing-dot-files-with-git/
+#
+# This script will setup the .bash directory, and in general, make the .bashrc
+# resource file usable.  This should be usable when you logout and log back in.
+
+# First make a backup of anything you plan to blow away
+cd ~
+mkdir ~/tmp/old_bash_files
+mv .bashrc .bash_history .bash_logout .bashprofile ~/tmp/old_bash_files
+
+# make the additional directories that you need
+mkdir -p ~/.bash
+
+# download and install files from GitHub
+git clone http://github.com/jeffskinnerbox/dotbash ~/.bash
+
+# create the virtual links to the Bash resource file
+ln -s ~/.bash/bashrc ~/.bashrc
+ln -s ~/.bash/bash_aliases ~/.bash_aliases
+ln -s ~/.bash/bash_logout ~/.bash_logout
+ln -s ~/.bash/bash_profile ~/.bash_profile
