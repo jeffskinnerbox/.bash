@@ -47,6 +47,10 @@ Now to push your files to the GitHub repository
 
     git push -u origin master
 
+To retrive these updates on another system, use
+
+    git pull origin master
+
 ## Sources / Credits
 
 * [Using Git and Github to Manage Your Dotfiles][03]
