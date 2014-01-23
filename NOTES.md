@@ -2,11 +2,7 @@
 In here are instructions on the creation, maintentance, and use of this repository
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
-* [Using Git and Github to Manage Your Dotfiles][03]
-* [Managing dot files with Git][04]
-
-Managing the Git Repository and GitHub
-
+## Managing the Git Repository and GitHub
 ===
 ### Creating the GitHub Repository
 Goto GitHub and create the new repository
@@ -50,6 +46,11 @@ the remote (GitHub) repository:
 Now to push your files to the GitHub repository
 
     git push -u origin master
+
+## Sources / Credits
+
+* [Using Git and Github to Manage Your Dotfiles][03]
+* [Managing dot files with Git][04]
 
 
 [01]:http://git-scm.com/

@@ -10,7 +10,7 @@
 # First make a backup of anything you plan to blow away
 cd ~
 mkdir ~/tmp/old_bash_files
-mv .bashrc .bash_history .bash_logout .bashprofile ~/tmp/old_bash_files
+mv .bashrc .bash_history .bash_logout .bash_profile ~/tmp/old_bash_files
 
 # make the additional directories that you need
 mkdir -p ~/.bash
