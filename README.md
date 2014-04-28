@@ -3,8 +3,8 @@ Bash Dotfiles
 **Bash Dotfiles** is a mash up of my bash profile/resource files, scripts, functions,
 aliases and other bash stuff I have created, found, or more likely ripped off from others.
 Therefore, out of respect, guilt, and a morbid fear of lawyers, I maintain a reasonably
-complete list of sources.  Check out the referances / sources and you may find
-a few additonal gems.
+complete list of sources.  Check out the references / sources and you may find
+a few additional gems.
 
 Bash
 ----
@@ -13,7 +13,7 @@ while .bashrc is executed for interactive non-login shells.
 
 When you login (type username and password) via console, either sitting at the
 machine, or remotely via ssh: .bash_profile is executed to configure your shell
-before the initial command prompt.  But, if you’ve already logged into your
+before the initial command prompt.  But, if you’re already logged into your
 machine and open a new terminal window (xterm) inside Gnome or KDE, then
 .bashrc is executed before the window command prompt. .bashrc is also run when
 you start a new bash instance by typing /bin/bash in a terminal.
@@ -21,7 +21,7 @@ you start a new bash instance by typing /bin/bash in a terminal.
 #### References / Sources
 
 * [shopt manual page](http://ss64.com/bash/shopt.html)
-* [Advanced Bash-Scripting Guida: Samples](http://tldp.org/LDP/abs/html/sample-bashrc.html)
+* [Advanced Bash-Scripting Guide: Samples](http://tldp.org/LDP/abs/html/sample-bashrc.html)
 
 Aliases and Functions
 ---------------------

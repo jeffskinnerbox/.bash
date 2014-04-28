@@ -1,5 +1,5 @@
 # Notes
-In here are instructions on the creation, maintentance, and use of this repository
+In here are instructions on the creation, maintenance, and use of this repository
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
 ## Managing the Git Repository and GitHub
@@ -47,7 +47,7 @@ Now to push your files to the GitHub repository
 
     git push -u origin master
 
-To retrive these updates on another system, use
+To retrieve these updates on another system, use
 
     git pull origin master
 
