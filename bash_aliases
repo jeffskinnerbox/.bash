@@ -78,6 +78,7 @@ function rmt {
     trash $*
 }
 
+# Move files to $HOME/tmp instead of deleteing them
 function rmtmp {
     mv $* $HOME/tmp
 }
@@ -88,6 +89,16 @@ function _exit {
     sleep 1
 }
 trap _exit EXIT
+
+# kill the X Server
+function killX {
+    ask "This will kill the X Server.  Do you wish to proceed?" 
+    if [ $? -eq 0 ]; then
+        sudo kill -9 $( ps -e | grep Xorg | cut -d " " -f 1 )
+        return;
+    fi
+    echo "Aborted."
+}
 
 # kill by process name
 function killps {
@@ -107,10 +118,11 @@ function killps {
     done
 }
 
+# Print a line of text (i.e. a question) and then ask for yes or no resposnes
 function ask {
-    echo -n "$@" '[y/n] ' ; read ans
+    echo -n "$@" '[ yes/no ] ' ; read ans
     case "$ans" in
-        y*|Y*) return 0 ;;
+        yes|Yes) return 0 ;;
         *) return 1 ;;
     esac
 }

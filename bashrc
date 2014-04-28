@@ -18,6 +18,11 @@ export EDITOR=vim               # set the default editor to vim.
 
 
 
+############################# Command Line Editing #############################
+set -o vi                       # set to vi editing mode
+
+
+
 ################################## Set Paths ##################################
 # Set PATH so it includes user's private bin if it exists
 if [ -d "${HOME}/bin" ]; then
@@ -38,6 +43,12 @@ fi
 if [ -d "${HOME}/bin" ]; then
     PYTHONPATH="${HOME}/bin:${PYTHONPATH}"
 fi
+
+
+
+#################### Setup for Python Virtual Environments ####################
+export WORKON_HOME="$HOME/.virtualenvs"
+source /usr/local/bin/virtualenvwrapper.sh
 
 
 
@@ -163,3 +174,7 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# set the bash command line prompt to color according to active virtualenv,
+# git branch and return status of last command.
+source ~/.bash/bash_prompt
