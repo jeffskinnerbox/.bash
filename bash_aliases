@@ -94,7 +94,7 @@ trap _exit EXIT
 function killX {
     ask "This will kill the X Server.  Do you wish to proceed?" 
     if [ $? -eq 0 ]; then
-        sudo kill -9 $( ps -e | grep Xorg | cut -d " " -f 1 )
+        sudo kill -9 $( ps -e | grep Xorg | awk '{ print $1 }' )
         return;
     fi
     echo "Aborted."

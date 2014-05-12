@@ -1,8 +1,8 @@
 #!/bin/bash
 #
-# DESCRIPTION: Set color bash prompt according to active virtualenv, git branch, and return status of last command.
-#
-#   Set the bash prompt according to:
+# DESCRIPTION:
+#   Set color bash prompt according to active virtualenv, git branch,
+#   and return status of last command.  Sets the bash prompt according to:
 #    * the active virtualenv
 #    * the branch/status of the current git repository
 #    * the return value of the previous command
@@ -10,13 +10,11 @@
 #      your prompts.
 #
 # USAGE:
-#
 #   1. Save this file as ~/.bash/bash_prompt
 #   2. Add the following line to the end of your ~/.bashrc or ~/.bash_profile:
-#        . ~/.bash/bash_prompt
+#      source ~/.bash/bash_prompt
 #
 # SOURCE:
-#
 #   Based on https://gist.github.com/jabbalaci/6651278
 #
 

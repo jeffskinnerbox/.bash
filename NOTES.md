@@ -57,6 +57,7 @@ To retrieve these updates on another system, use
 * [Managing dot files with Git][04]
 
 
+
 [01]:http://git-scm.com/
 [02]:https://github.com/
 [03]:http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
