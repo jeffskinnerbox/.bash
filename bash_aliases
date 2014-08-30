@@ -66,6 +66,8 @@ alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
 alias cd......='cd ../../../../..'
 
+# Pretty print formatting for text, source code, markup, and other similar kinds of content.
+alias pp_json='python -mjson.tool | pygmentize -l javascript'
 
 
 ################################## Functions ##################################
