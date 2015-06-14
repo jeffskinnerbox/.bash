@@ -178,3 +178,6 @@ fi
 # set the bash command line prompt to color according to active virtualenv,
 # git branch and return status of last command.
 source ~/.bash/bash_prompt
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
