@@ -1,3 +1,6 @@
+# Maintainer:   jeff.irland@gmail.com
+# Version:      1.0
+#
 # This file will be executed by Bash when a login shell exits.
 
 # when leaving the console, clear the screen to increase privacy

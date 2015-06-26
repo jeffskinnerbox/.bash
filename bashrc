@@ -1,7 +1,14 @@
-
+# Maintainer:   jeff.irland@gmail.com
+# Version:      1.0
+#
 # This file is executed for interactive non-login shells, while .bash_profile
 # is executed for login shells.
 
+# If not running interactively, don't do anything
+case $- in
+    *i*) ;;
+      *) return;;
+esac
 
 
 ############################## Set Shell Options ##############################

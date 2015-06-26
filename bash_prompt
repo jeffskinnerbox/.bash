@@ -1,5 +1,8 @@
 #!/bin/bash
 #
+# Maintainer:   jeff.irland@gmail.com
+# Version:      1.0
+#
 # DESCRIPTION:
 #   Set color bash prompt according to active virtualenv, git branch,
 #   and return status of last command.  Sets the bash prompt according to:

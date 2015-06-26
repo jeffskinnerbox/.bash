@@ -1,4 +1,6 @@
-
+# Maintainer:   jeff.irland@gmail.com
+# Version:      1.0
+#
 # This file will be sourced by .bashrc.
 
 # Must set this option, else script will not expand aliases.
@@ -17,8 +19,8 @@ alias grc='gnuradio-companion'      # Short hand for GNU Radio Companion
 alias du='du -kh'                   # Makes a more readable output of estimated file space usage
 alias df='df -kTh'                  # Makes a more readable output of file system disk space usage
 alias ports='netstat -tulanp'       # list all TCP/UDP port
-alias update='sudo apt-get update && sudo apt-get upgrade'  # update on one command 
- 
+alias update='sudo apt-get update && sudo apt-get upgrade'  # update on one command
+
 # Enables color support of ls, grep, and other colorized utilities
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
@@ -37,17 +39,17 @@ alias lsal='ls --color=auto -A -l'   # long form with hiden files
 alias ls.='ls --color=auto -d .*'    # show only hidden files
 alias ll='ls -alF'
 alias l='ls -CF'
- 
+
 # Make some possibly destructive commands more safe & interactive
 alias rm='rm -I'
 alias mv='mv -i'
 alias cp='cp -i'
- 
+
 alias meminfo='free -m -l -t'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'  # top 10 processes eating memory
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'  # top 10 processes eating CPU
 alias path='echo -e ${PATH//:/\\n}'                 # pretty-print PATH
- 
+
 # Quick navigation of the directory
 # See http://www.thegeekstuff.com/2008/10/6-awesome-linux-cd-command-hacks-productivity-tip3-for-geeks/
 alias ..='cd ..'
@@ -94,7 +96,7 @@ trap _exit EXIT
 
 # kill the X Server
 function killX {
-    ask "This will kill the X Server.  Do you wish to proceed?" 
+    ask "This will kill the X Server.  Do you wish to proceed?"
     if [ $? -eq 0 ]; then
         sudo kill -9 $( ps -e | grep Xorg | awk '{ print $1 }' )
         return;
