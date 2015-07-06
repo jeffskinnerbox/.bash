@@ -1,5 +1,5 @@
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0
+# Version:      1.0.1
 #
 # This file will be executed by Bash when a login shell exits.
 
@@ -8,4 +8,5 @@ if [ "$SHLVL" = 1 ]; then
     [ -x /usr/bin/clear_console ] && /usr/bin/clear_console -q
 fi
 
-_exit
+# see functions in bash_aliases
+#_exit

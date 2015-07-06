@@ -1,5 +1,5 @@
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0
+# Version:      1.0.1
 #
 # This file will be sourced by .bashrc.
 

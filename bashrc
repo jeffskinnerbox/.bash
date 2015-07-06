@@ -1,5 +1,5 @@
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0
+# Version:      1.0.1
 #
 # This file is executed for interactive non-login shells, while .bash_profile
 # is executed for login shells.

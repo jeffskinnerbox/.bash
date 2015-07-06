@@ -1,8 +1,11 @@
 #!/bin/bash
 #
+# Maintainer:   jeff.irland@gmail.com
+# Version:      1.0.1
+#
 # Check out these posts:
-#   Using Git and Github to Manage Your Dotfiles - http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
-#   Managing dot files with Git - http://blog.sanctum.geek.nz/managing-dot-files-with-git/
+# Using Git and Github to Manage Your Dotfiles - http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
+# Managing dot files with Git - http://blog.sanctum.geek.nz/managing-dot-files-with-git/
 #
 # This script will setup the .bash directory, and in general, make the .bashrc
 # resource file usable.  This should be usable when you logout and log back in.
