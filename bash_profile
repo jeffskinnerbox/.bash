@@ -1,5 +1,5 @@
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.1
+# Version:      1.0.2
 #
 # This file is executed for login shells, while .bashrc is executed for
 # interactive non-login shells.

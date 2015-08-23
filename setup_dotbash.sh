@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.1
+# Version:      1.0.2
 #
 # Check out these posts:
 # Using Git and Github to Manage Your Dotfiles - http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/

@@ -1,5 +1,5 @@
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.1
+# Version:      1.0.2
 #
 # This file is executed for interactive non-login shells, while .bash_profile
 # is executed for login shells.
@@ -54,8 +54,9 @@ fi
 
 
 #################### Setup for Python Virtual Environments ####################
+# must doe the following install - pip install virtualenvwrapper 
 export WORKON_HOME="$HOME/.virtualenvs"
-source /usr/local/bin/virtualenvwrapper.sh
+source ${HOME}/.bash/virtualenvwrapper.sh
 
 
 

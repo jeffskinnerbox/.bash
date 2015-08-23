@@ -1,5 +1,5 @@
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.1
+# Version:      1.0.2
 #
 # This file will be executed by Bash when a login shell exits.
 

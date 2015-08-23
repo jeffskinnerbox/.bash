@@ -1,5 +1,5 @@
 # Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.1
+# Version:      1.0.2
 #
 # This file will be sourced by .bashrc.
 
@@ -13,13 +13,15 @@ shopt -s expand_aliases
 # Short-hand commands for commonly used programs
 alias clr='clear'                   # clear the screen
 alias cls='clear'                   # clear the screen
-alias vi='vim -g -p'                # When using Vim, open in GUI mode and multiple files within separate tabs
+alias vi='vim -g -p'                # When using Vi, open Vim in GUI mode and multiple files within separate tabs
+alias vim='gnome-terminal --execute vim "$@"'   # open Vim in a seperate window
 alias chrome='chromium-browser'     # Linux version of Chrome web browser
 alias grc='gnuradio-companion'      # Short hand for GNU Radio Companion
 alias du='du -kh'                   # Makes a more readable output of estimated file space usage
 alias df='df -kTh'                  # Makes a more readable output of file system disk space usage
 alias ports='netstat -tulanp'       # list all TCP/UDP port
-alias update='sudo apt-get update && sudo apt-get upgrade'  # update on one command
+alias update='sudo apt-get update && sudo apt-get dist-upgrade'  # update on one command
+#alias update='sudo apt-get update && sudo apt-get upgrade'  # update on one command
 
 # Enables color support of ls, grep, and other colorized utilities
 if [ -x /usr/bin/dircolors ]; then
