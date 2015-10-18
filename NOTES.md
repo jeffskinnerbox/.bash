@@ -2,13 +2,16 @@
 In here are instructions on the creation, maintenance, and use of this repository
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
+* [Using Git and Github to Manage Your Dotfiles][03]
+* [Managing dot files with Git][04]
+
 ## Managing the Git Repository and GitHub
 ===
 ### Creating the GitHub Repository
 Goto GitHub and create the new repository
 
     goto https://github.com/jeffskinnerbox
-    <create empty repository called 'dotbash'>
+    <create empty repository called '.bash'>
 
 ### Creating the Local Git Repository
 Make the .bash directory, move into it, and initialize it as a git repository
@@ -17,15 +20,61 @@ Make the .bash directory, move into it, and initialize it as a git repository
     mkdir .bash
     cd .bash
     git init
-    <Create a README, bash_aliases, bash_logout, bash_profile, and bashrc files>
-    git add .
+Now create the README, bash_aliases, bash_logout, bash_profile, and bashrc files.
+
+Also create the file .gitignore like this:
+
+    ### ---------- Project Specific ---------- ###
+
+
+    ### ---------- General ---------- ###
+
+    ### Compiled Source ###
+    *.pyc
+    *.com
+    *.class
+    *.dll
+    *.exe
+    *.o
+    *.so
+
+    ### Packages ###
+    *.7z
+    *.dmg
+    *.gz
+    *.iso
+    *.jar
+    *.rar
+    *.tar
+    *.zip
+
+    ### Logs & Databases ###
+    *.log
+    *.sql
+    *.sqlite
+
+    ### OS Generated Files ###
+    *.out
+    *.swp
+    .DS_Store
+    .DS_Store?
+    ._*
+    .Spotlight-V100
+    .Trashes
+    Icon?
+    ehthumbs.db
+    Thumbs.db
+
+Now commit the files to the git repository:
+
+    git add --all
     git commit -m 'Initial creation of Bash scripts for Linux box'
 
 ### Loading the GitHub Repository for the First Time
 Within the ~.bash directory, use git to load the files to GitHub
 
     cd ~/.bash
-    git remote add origin https://github.com/jeffskinnerbox/dotbash.git
+    git remote add origin https://github.com/jeffskinnerbox/.bash.git
     git push -u origin master
 
 ### Updating the Local Git Repository
@@ -37,9 +86,9 @@ add files (or remove) that are required, and then do the commit to the local git
     git commit --dry-run
     git commit -m <comment>
 
-### Updating the Remote (i.e. GitHub) Repository
-To which shows you the URL that Git has stored for the shortname to for
-the remote (GitHub) repository:
+### Updating the Remote Repository (i.e. GitHub)
+To which shows you the URL that Git has stored for the shortname for
+the remote repository (i.e. GitHub):
 
     git remote -v
 
@@ -47,14 +96,10 @@ Now to push your files to the GitHub repository
 
     git push -u origin master
 
+### Retrieving Update From Remote Repository (i.e. GitHub)
 To retrieve these updates on another system, use
 
     git pull origin master
-
-## Sources / Credits
-
-* [Using Git and Github to Manage Your Dotfiles][03]
-* [Managing dot files with Git][04]
 
 
 

@@ -1,7 +1,7 @@
 #!/bin/bash
 #
-# Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.2
+# Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
+# Version:      1.0.3
 #
 # Check out these posts:
 # Using Git and Github to Manage Your Dotfiles - http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
@@ -13,7 +13,7 @@
 # First make a backup of anything you plan to blow away
 cd ~
 mkdir ~/tmp/old_bash_files
-mv .bashrc .bash_history .bash_logout .bash_profile ~/tmp/old_bash_files
+mv .bashrc .bash_history .bash_login .bash_logout .bash_profile ~/tmp/old_bash_files
 
 # make the additional directories that you need
 mkdir -p ~/.bash
@@ -23,6 +23,7 @@ git clone http://github.com/jeffskinnerbox/dotbash ~/.bash
 
 # create the virtual links to the Bash resource file
 ln -s ~/.bash/bashrc ~/.bashrc
-ln -s ~/.bash/bash_aliases ~/.bash_aliases
+ln -s ~/.bash/bash_login ~/.bash_login
 ln -s ~/.bash/bash_logout ~/.bash_logout
 ln -s ~/.bash/bash_profile ~/.bash_profile
+ln -s ~/.bash/bash_aliases ~/.bash_aliases
