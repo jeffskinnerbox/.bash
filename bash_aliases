@@ -1,5 +1,5 @@
-# Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.3
+# Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
+# Version:      1.0.4
 #
 # DESCRIPTION:
 # This script contains Bash aliases and functions and should be sourced within
@@ -59,7 +59,11 @@ alias ll='ls -alF'
 alias l='ls -CF'
 
 # Make some possibly destructive commands more safe & interactive
-alias rm='rm -I'
+if [ "${OPSYS}" = 'OS X' ]; then
+    alias rm='rm -i'
+else
+    alias rm='rm -I'
+fi
 alias mv='mv -i'
 alias cp='cp -i'
 

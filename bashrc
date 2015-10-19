@@ -1,5 +1,5 @@
-# Maintainer:   jeff.irland@gmail.com
-# Version:      1.0.3
+# Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
+# Version:      1.0.4
 #
 # DESCRIPTION:
 # This file is executed for interactive non-login shells, while .bash_profile
@@ -179,5 +179,5 @@ fi
 # set the bash command line prompt to color according to active virtualenv,
 # git branch and return status of last command.
 if [ -f ${HOME}/.bash/bash_prompt ]; then
-    source ~/.bash/bash_prompt
+    source $HOME/.bash/bash_prompt
 fi

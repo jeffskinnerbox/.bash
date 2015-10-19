@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.3
+# Version:      1.0.4
 #
 # Alternative startup script for faster login times.
 
