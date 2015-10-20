@@ -114,6 +114,11 @@ function rmtmp {
     mv $* $HOME/tmp
 }
 
+# Set the title of the terminal window
+function term_title {
+    echo -ne "\033]0;$*\007"
+}
+
 # This function will be automatically run upon exit of shell
 function _exit {
     echo -e "${BRed}Hasta la vista, baby!${NC}"

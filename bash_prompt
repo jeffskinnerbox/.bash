@@ -39,6 +39,9 @@ else
 fi
 
 
+# Get the host name
+HOST=$(hostname)
+
 
 #
 # Detect whether the current directory is a git repository.
@@ -116,6 +119,12 @@ function set_virtualenv () {
     fi
 }
 
+# Set the title on the terminal
+# NOTE: ${PWD##*/} will give you just the current directory
+function set_title () {
+    echo -ne "\033]0;${USER}@${HOST} - ${PWD}\007"
+}
+
 
 #
 # Set the full bash prompt.
@@ -141,8 +150,11 @@ function set_bash_prompt () {
     else
         PS1="${PYTHON_VIRTUALENV}\u@\h: \w ${BRANCH}${PROMPT_SYMBOL} "
     fi
+
+    # Set title on the terminal window
+    set_title
 }
 
-
-# Tell bash to execute this function just before displaying its prompt.
+# When set, PROMPT_COMMAND is interpreted as a command to execute
+# before the printing of each primary prompt ($PS1).
 PROMPT_COMMAND=set_bash_prompt
