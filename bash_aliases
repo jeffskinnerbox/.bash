@@ -106,7 +106,7 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # original path, deletion date, and permissions of each trashed file.
 # Also see utilities list-trash, restore-trash, and empty-trash.
 function rmt {
-    trash $*
+    trash $*                 # NOTE: for Mac OX, you must do "brew install trash"
 }
 
 # Move files to $HOME/tmp instead of deleting them
