@@ -1,5 +1,5 @@
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.4
+# Version:      1.0.5
 #
 # DESCRIPTION:
 # This script contains Bash aliases and functions and should be sourced within

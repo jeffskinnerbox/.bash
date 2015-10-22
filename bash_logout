@@ -1,5 +1,5 @@
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.4
+# Version:      1.0.5
 #
 # DESCRIPTION:
 # This file will be executed by Bash when a login shell exits.
