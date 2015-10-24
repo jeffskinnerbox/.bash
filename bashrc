@@ -50,7 +50,7 @@ fi
 
 
 #################### Setup for Python Virtual Environments ####################
-# must doe the following install - pip install virtualenvwrapper
+# you first must do the following install - pip install virtualenvwrapper
 if [ -f ${HOME}/.bash/virtualenvwrapper.sh ]; then
     export WORKON_HOME="$HOME/.virtualenvs"
     source ${HOME}/.bash/virtualenvwrapper.sh
@@ -59,10 +59,8 @@ fi
 
 
 ############################## Set Shell Options ##############################
-shopt -s histappend             # append to the history file, don't overwrite it
 shopt -s checkwinsize           # update the values of LINES and COLUMNS
 shopt -s cdspell                # minor errors in cd command are corrected
-shopt -s cmdhist                # save multiple-line commands in history
 
 
 
@@ -73,7 +71,7 @@ export EDITOR=vim               # set the default editor to vim.
 
 
 ############################# Command Line Editing #############################
-set -o vi                       # set to vi editing mode
+set -o vi                       # set commandline editor to vi editing mode
 
 
 
@@ -81,6 +79,8 @@ set -o vi                       # set to vi editing mode
 HISTSIZE=1000
 HISTFILESIZE=2000
 HISTCONTROL=ignoreboth     # don't put duplicate lines or lines starting with space in the history
+shopt -s histappend        # append to the history file, don't overwrite it
+shopt -s cmdhist           # save multiple-line commands in history
 
 
 

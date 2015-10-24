@@ -60,11 +60,11 @@ function set_git_branch {
 
     # Set color based on clean/staged/dirty.
     if [[ ${git_status} =~ "working directory clean" ]]; then
-        state="${Green}"
+        state="${GREEN}"
     elif [[ ${git_status} =~ "Changes to be committed" ]]; then
-        state="${BYellow}"
+        state="${BYELLOW}"
     else
-        state="${Red}"
+        state="${RED}"
     fi
 
     # Set arrow icon based on status against remote.
@@ -91,7 +91,7 @@ function set_git_branch {
     fi
 
     # Set the final branch string.
-    BRANCH="${state}(${branch})${remote}${NC} "
+    BRANCH="${state}(${branch})${remote}${NCOLOR} "
 }
 
 
@@ -103,7 +103,7 @@ function set_prompt_symbol () {
     if test $1 -eq 0 ; then
         PROMPT_SYMBOL="\$"
     else
-        PROMPT_SYMBOL="${BRed}\$${NC}"
+        PROMPT_SYMBOL="${BRED}\$${NCOLOR}"
     fi
 }
 
@@ -115,7 +115,7 @@ function set_virtualenv () {
     if test -z "$VIRTUAL_ENV" ; then
         PYTHON_VIRTUALENV=""
     else
-        PYTHON_VIRTUALENV="${BBlue}[`basename \"$VIRTUAL_ENV\"`]${NC} "
+        PYTHON_VIRTUALENV="${BBLUE}[`basename \"$VIRTUAL_ENV\"`]${NCOLOR} "
     fi
 }
 

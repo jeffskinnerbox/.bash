@@ -42,9 +42,8 @@ using a function.
 To clone these Bash scripts and use them on another system, execute the following:
 
     cd ~
-    git clone https://github.com/jeffskinnerbox/dotbash.git ~/.bash
-    ln -s ~/.bash/bash_aliases ~/.bash_aliases
+    git clone https://github.com/jeffskinnerbox/.bash.git
+    ln -s ~/.bash/bashrc ~/.bashrc
+    ln -s ~/.bash/bash_login ~/.bash_login
     ln -s ~/.bash/bash_logout ~/.bash_logout
     ln -s ~/.bash/bash_profile ~/.bash_profile
-    ln -s ~/.bash/bashrc ~/.bashrc
-    cd ~/.bash

@@ -101,6 +101,17 @@ To retrieve these updates on another system, use
 
     git pull origin master
 
+To overwrite everything in the local directory
+
+    git fetch --all
+    git reset --hard origin/master
+
+Explanation: `git fetch` downloads the latest from remote without trying to merge or rebase anything.
+Then the `git reset` resets the master branch to what you just fetched.
+The `--hard` option changes all the files in your working tree to match the files in `origin/master`.
+If you have any files that are _not_ tracked by Git,
+these files will not be affected.
+
 
 
 [01]:http://git-scm.com/

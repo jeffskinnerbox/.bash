@@ -121,7 +121,7 @@ function term_title {
 
 # This function will be automatically run upon exit of shell
 function _exit {
-    echo -e "${BRed}Hasta la vista, baby!${NC}"
+    echo -e "${BRed}Hasta la vista, baby!${NColor}"
     sleep 1
 }
 trap _exit EXIT
@@ -135,7 +135,7 @@ function killX {
         return;
     fi
     echo "Aborted."
-    echo -e ${NC}
+    echo -e ${NColor}
 }
 
 # kill a process by giving its process name
@@ -220,40 +220,40 @@ function findfile {
 
 # remind yourself of an alias (given some part of it)
 function showa {
-    /bin/grep -i -a1 $@ ~/.bash_aliases | /bin/grep -v '^\s*$'
+    /bin/grep -i -a1 $@ ~/.bash/bash_aliases | /bin/grep -v '^\s*$'
 }
 
 # Using the variables defined in bash_colors, print the colors on the terminal
 function print_colors {
-    echo -e ${Black}Black on background${NC}
-    echo -e ${BBlack}Bold Black on background${NC}
-    echo -e ${On_Black}${BRed}Bold Red on Black background${NC}
+    echo -e ${Black}Black on background${NColor}
+    echo -e ${BBlack}Bold Black on background${NColor}
+    echo -e ${On_Black}${BRed}Bold Red on Black background${NColor}
 
-    echo -e ${Red}Red on background${NC}
-    echo -e ${BRed}Bold Red on background${NC}
-    echo -e ${On_Red}${BRed}Bold Red on Red background${NC}
+    echo -e ${Red}Red on background${NColor}
+    echo -e ${BRed}Bold Red on background${NColor}
+    echo -e ${On_Red}${BRed}Bold Red on Red background${NColor}
 
-    echo -e ${Green}Green on background${NC}
-    echo -e ${BGreen}Bold Green on background${NC}
-    echo -e ${On_Green}${BRed}Bold Red on Green background${NC}
+    echo -e ${Green}Green on background${NColor}
+    echo -e ${BGreen}Bold Green on background${NColor}
+    echo -e ${On_Green}${BRed}Bold Red on Green background${NColor}
 
-    echo -e ${Blue}Blue on background${NC}
-    echo -e ${BBlue}Bold Blue on background${NC}
-    echo -e ${On_Blue}${BRed}Bold Red on Blue background${NC}
+    echo -e ${Blue}Blue on background${NColor}
+    echo -e ${BBlue}Bold Blue on background${NColor}
+    echo -e ${On_Blue}${BRed}Bold Red on Blue background${NColor}
 
-    echo -e ${Yellow}Yellow on background${NC}
-    echo -e ${BYellow}Bold Yellow on background${NC}
-    echo -e ${On_Yellow}${BRed}Bold Red on Yellow background${NC}
+    echo -e ${Yellow}Yellow on background${NColor}
+    echo -e ${BYellow}Bold Yellow on background${NColor}
+    echo -e ${On_Yellow}${BRed}Bold Red on Yellow background${NColor}
 
-    echo -e ${Purple}Purple on background${NC}
-    echo -e ${BPurple}Bold Purple on background${NC}
-    echo -e ${On_Purple}${BRed}Bold Red on Purple background${NC}
+    echo -e ${Purple}Purple on background${NColor}
+    echo -e ${BPurple}Bold Purple on background${NColor}
+    echo -e ${On_Purple}${BRed}Bold Red on Purple background${NColor}
 
-    echo -e ${Cyan}Cyan on background${NC}
-    echo -e ${BCyan}Bold Cyan on background${NC}
-    echo -e ${On_Cyan}${BRed}Bold Red on Cyan background${NC}
+    echo -e ${Cyan}Cyan on background${NColor}
+    echo -e ${BCyan}Bold Cyan on background${NColor}
+    echo -e ${On_Cyan}${BRed}Bold Red on Cyan background${NColor}
 
-    echo -e ${White}White on background${NC}
-    echo -e ${BWhite}Bold White on background${NC}
-    echo -e ${On_WHite}${BRed}Bold Red on White background${NC}
+    echo -e ${White}White on background${NColor}
+    echo -e ${BWhite}Bold White on background${NColor}
+    echo -e ${On_WHite}${BRed}Bold Red on White background${NColor}
 }
