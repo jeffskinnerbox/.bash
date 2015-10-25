@@ -1,4 +1,5 @@
 #!/usr/bin/perl
+#
 # A utility script to test out dircolors settings without reloading
 # Usage: dircolortest <dircolors file>
 

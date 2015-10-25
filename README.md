@@ -47,3 +47,4 @@ To clone these Bash scripts and use them on another system, execute the followin
     ln -s ~/.bash/bash_login ~/.bash_login
     ln -s ~/.bash/bash_logout ~/.bash_logout
     ln -s ~/.bash/bash_profile ~/.bash_profile
+    ln -s ~/.bash/dircolors.old ~/.dircolors

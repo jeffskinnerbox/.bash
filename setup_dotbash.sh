@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.5
+# Version:      1.0.6
 #
 # Check out these posts:
 # Using Git and Github to Manage Your Dotfiles - http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
@@ -24,7 +24,7 @@ git clone http://github.com/jeffskinnerbox/.bash
 
 # create the virtual links to the Bash resource file
 ln -s ~/.bash/bashrc ~/.bashrc
-ln -s ~/.bash/dircolors.old ~/.dircolors
 ln -s ~/.bash/bash_login ~/.bash_login
 ln -s ~/.bash/bash_logout ~/.bash_logout
 ln -s ~/.bash/bash_profile ~/.bash_profile
+ln -s ~/.bash/dircolors.old ~/.dircolors
