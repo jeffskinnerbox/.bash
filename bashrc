@@ -35,9 +35,13 @@ fi
 
 
 
-########################### Define Terminal Colors ############################
+######################## Define Terminal and ls Colors #########################
 if [ -f $HOME/.bash/bash_colors ]; then
     source $HOME/.bash/bash_colors
+fi
+
+if [ -f $HOME/.dircolors ]; then
+    eval $(dircolors $HOME/.dircolors)
 fi
 
 
@@ -58,7 +62,12 @@ fi
 
 
 
-####################### Setup Colorized / Dynamic Prompt #######################
+################### Setup Colorize Scheme and Dynamic Prompt ###################
+# Set color scheme for ls, grep, etc
+if [ -r $HOME/.dircolors ]; then
+    eval "$(dircolors $HOME/.dircolors)"
+fi
+
 # set the bash command line prompt to color according to active virtualenv,
 # git branch and return status of last command.
 if [ -f ${HOME}/.bash/bash_prompt ]; then

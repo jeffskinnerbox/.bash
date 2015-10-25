@@ -13,7 +13,7 @@
 # First make a backup of anything you plan to blow away
 cd ~
 mkdir ~/tmp/old_bash_files
-mv .bash .bashrc .bash_history .bash_login .bash_logout .bash_profile ~/tmp/old_bash_files
+mv .dircolors .bash .bashrc .bash_history .bash_login .bash_logout .bash_profile ~/tmp/old_bash_files
 
 # make the additional directories that you need
 mkdir -p ~/.bash
@@ -24,6 +24,7 @@ git clone http://github.com/jeffskinnerbox/.bash
 
 # create the virtual links to the Bash resource file
 ln -s ~/.bash/bashrc ~/.bashrc
+ln -s ~/.bash/dircolors.old ~/.dircolors
 ln -s ~/.bash/bash_login ~/.bash_login
 ln -s ~/.bash/bash_logout ~/.bash_logout
 ln -s ~/.bash/bash_profile ~/.bash_profile

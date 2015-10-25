@@ -16,7 +16,7 @@
 * [Color Bash Prompt](https://wiki.archlinux.org/index.php/Color_Bash_Prompt)
 * [Bash Shell PS1: 10 Examples to Make Your Linux Prompt like Angelina Jolie](http://www.thegeekstuff.com/2008/09/bash-shell-ps1-10-examples-to-make-your-linux-prompt-like-angelina-jolie/)
 * [sane bash environment](https://github.com/rtomayko/dotfiles/blob/rtomayko/.bashrc)
-  
+
 ### Shell Prompt - for many examples, see:
 * [Fancy Bash Prompts](http://www.debian-administration.org/articles/205)
 * [Crazy POWERFUL Bash Prompt](http://www.askapache.com/linux/bash-power-prompt.html)
