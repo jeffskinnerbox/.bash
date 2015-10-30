@@ -36,6 +36,16 @@ BPurple='\e[1;35m'            # Purple
 BCyan='\e[1;36m'              # Cyan
 BWhite='\e[1;37m'             # White
 
+# Underline
+UBlack='\e[4;30m'             # Black
+URed='\e[4;31m'               # Red
+UGreen='\e[4;32m'             # Green
+UYellow='\e[4;33m'            # Yellow
+UBlue='\e[4;34m'              # Blue
+UPurple='\e[4;35m'            # Purple
+UCyan='\e[4;36m'              # Cyan
+UWhite='\e[4;37m'             # White
+
 # Background Colors
 On_Black='\e[40m'             # Black
 On_Red='\e[41m'               # Red
@@ -74,6 +84,16 @@ BBLUE='\[\033[1;34m\]'        # Blue
 BPURPLE='\[\033[1;35m\]'      # Purple
 BCYAN='\[\033[1;36m\]'        # Cyan
 BWHITE='\[\033[1;37m\]'       # White
+
+# Underline
+UBLACK='\[\033[4;30m\]'       # Black
+URED='\[\033[4;31m\]'         # Red
+UGREEN='\[\033[4;32m\]'       # Green
+UYELLOW='\[\033[4;33m\]'      # Yellow
+UBLUE='\[\033[4;34m\]'        # Blue
+UPURPLE='\[\033[4;35m\]'      # Purple
+UCYAN='\[\033[4;36m\]'        # Cyan
+UWHITE='\[\033[4;37m\]'       # White
 
 # Background Colors
 On_BLACK='\[\033[40m\]'       # Black

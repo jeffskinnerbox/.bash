@@ -126,13 +126,45 @@ function _exit {
 }
 trap _exit EXIT
 
+# remove all directories and their files
+function rm_dir {
+    echo -e ${ALERT}
+    ask "This will delete all directories and their files.  Consider using rmdir = remove only empty directories, rmt = move directories and file to trash, or rmtmp = move the directory to $HOME/tmp. Do you wish to proceed?"
+    if [ $? -eq 0 ]; then
+        if [ "${OPSYS}" = 'Linux' ]; then
+            # -r "recursive" descend the directory structure and do the deletion
+            rm -r $*
+        fi
+        if [ "${OPSYS}" = 'OS X' ]; then
+            # -r "recursive" -f "force" (suppress confirmation messages)
+            #-i stands for interactive; it makes rm prompt you before deleting each and every file
+            rm -rf $*
+        fi
+        echo -e ${NColor}
+        return;
+    fi
+    echo "Aborted."
+    echo -e ${NColor}
+}
+
+# A way to remove all files in a directory except for some directories, and files.
+# After much searching I devised a way to do it using find.
+#
+#find -E . -regex './(dir1|dir2|dir3)' -and -type d -prune -o -print -exec rm -rf {} \;
+#
+# Essentially it uses regex to select the directories to exclude from the results
+# then removes the remaining files.
+
 # kill the X Server
 function killX {
     echo -e ${ALERT}
     ask "This will kill the X Server.  Do you wish to proceed?"
     if [ $? -eq 0 ]; then
-        sudo kill -9 $( ps -e | grep Xorg | awk '{ print $1 }' )
-        return;
+        if [ "${OPSYS}" = 'Linux' ]; then
+            sudo kill -9 $( ps -e | grep Xorg | awk '{ print $1 }' )
+            echo -e ${NColor}
+            return;
+        fi
     fi
     echo "Aborted."
     echo -e ${NColor}
@@ -206,10 +238,14 @@ function waitForProcess {
 	done
 }
 
-# Get IP address on Ethernet
+# Get IP address
+# http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
 function my_ip {
-    MY_IP=$(/sbin/ifconfig eth0 | awk '/inet/ { print $2 } ' | sed -e s/addr://)
-    echo ${MY_IP:-"Not connected"}
+    # local IP addresses provided to the system
+    /sbin/ifconfig |grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' | awk -F: '{ print $1 ": " $3 }'
+
+    # extenal IP address
+    curl ipecho.net/plain ; echo "   - external IP address"
 }
 
 # Moving thought the current directory and its sub-directories,
