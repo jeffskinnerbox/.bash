@@ -21,13 +21,6 @@ esac
 
 
 
-################################ Define Aliases ################################
-if [ -f $HOME/.bash/bash_aliases ]; then
-    source $HOME/.bash/bash_aliases
-fi
-
-
-
 #########################  Test for Operating System  #########################
 if [ "$(uname)" == "Darwin" ]; then
     # your running on Mac OS X platform
@@ -38,6 +31,13 @@ elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
 elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
     # your running on Windows NT platform
     OPSYS="Win"
+fi
+
+
+
+################################ Define Aliases ################################
+if [ -f $HOME/.bash/bash_aliases ]; then
+    source $HOME/.bash/bash_aliases
 fi
 
 
