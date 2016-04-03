@@ -20,18 +20,28 @@ shopt -s expand_aliases
 
 # Short-hand commands for commonly used programs
 if [ "${OPSYS}" = 'Linux' ]; then
-    alias vi='vim -g -p'                # When using Vi, open Vim in GUI mode and multiple files within separate tabs
-    alias vim='gnome-terminal --execute vim "$@"'   # open Vim in a seperate window
+    # When using Vi, use Vim with multiple files within separate tabs
+    if [ $(wmctrl -m | grep Name | awk '{ print $2 }') = 'i3' ]; then
+        alias vi='vim -p'       # if in i3 window manager, open in current window
+    else
+        alias vi='vim -g -p'    # if not in i3 window manager, use GUI mode (open new window)
+    fi
+    else
+        # open Vim in a seperate window
+        alias vim='gnome-terminal --execute vim "$@"'
 fi
+
 alias clr='clear'                       # clear the screen
 alias cls='clear'                       # clear the screen
 alias chrome='chromium-browser'         # Linux version of Chrome web browser
 alias grc='gnuradio-companion'          # Short hand for GNU Radio Companion
 alias du='du -kh'                       # Makes a more readable output of estimated file space usage
-alias df='df -kTh'                      # Makes a more readable output of file system disk space usage
+alias df='df -kh'                       # Makes a more readable output of file system disk space usage
 alias ports='netstat -tulanp'           # list all TCP/UDP port
-alias update='sudo apt-get update && sudo apt-get dist-upgrade'  # update on one command
-#alias update='sudo apt-get update && sudo apt-get upgrade'  # update on one command
+
+# update Debien / Ubuntu distro in one commandline
+#alias update='sudo apt-get update && sudo apt-get upgrade'
+alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 
 # Enables color support of ls, grep, and other colorized utilities
 alias ls='ls -G'
@@ -90,9 +100,12 @@ alias cd....='cd ../../..'
 alias cd.....='cd ../../../..'
 alias cd......='cd ../../../../..'
 
-# Pretty print formatting for text, source code, markup, and other similar kinds of content.
-alias pp_json='python -m json.tool | pygmentize -l json'
+# display all iptables rules
+alias iptlist='sudo /sbin/iptables -L -n -v --line-numbers'
 
+# Pretty print formatting for text, source code, markup, and other similar kinds of content.
+alias pf_json='python -m json.tool'                        # pretty format JSON
+alias pp_json='python -m json.tool | pygmentize -l json'   # pretty print JSON
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -238,8 +251,29 @@ function waitForProcess {
 	done
 }
 
+# Get Window Manager
+# an alternative on Ubuntu "echo $DESKTOP_SESSION"
+function my_wm {
+    wmctrl -m | grep Name | awk '{ print $2 }'
+}
+
+# Get Operating System
+function my_os {
+    if [ "$(uname)" == "Darwin" ]; then
+        # your running on Mac OS X platform
+        echo "Apple OS X"
+    elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
+        # your running on Linux platform
+        echo "Linux"
+    elif [ "$(expr substr $(uname -s) 1 10)" == "MINGW32_NT" ]; then
+        # your running on Windows NT platform
+        echo "Microsoft Windows NT"
+    fi
+}
+
 # Get IP address
 # http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
+# curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' | sed -e 's/<.*$//'
 function my_ip {
     # local IP addresses provided to the system
     /sbin/ifconfig |grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' | awk -F: '{ print $1 ": " $3 }'

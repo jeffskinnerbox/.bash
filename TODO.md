@@ -1,4 +1,5 @@
 # TO DO LIST
+
 ### Odd ball stuff
 * [COLORS-Dircolors](http://www.linux-sxs.org/housekeeping/dircolor.html)
 * [BASH shell aliases I can't live without](http://bicchi.blogspot.com/2007/03/bash-shell-aliases-i-cant-leave-without.html)

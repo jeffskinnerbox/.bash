@@ -18,9 +18,14 @@ mv .dircolors .bash .bashrc .bash_history .bash_login .bash_logout .bash_profile
 # make the additional directories that you need
 mkdir -p ~/.bash
 
-# download and install files from GitHub
+# download and install Bash resource files from GitHub
 cd ~
 git clone http://github.com/jeffskinnerbox/.bash
+
+# install virtualenv
+sudo apt-get install python-pip
+sudo pip install virtualenv
+sudo pip install virtualenvwrapper
 
 # create the virtual links to the Bash resource file
 ln -s ~/.bash/bashrc ~/.bashrc
@@ -28,3 +33,15 @@ ln -s ~/.bash/bash_login ~/.bash_login
 ln -s ~/.bash/bash_logout ~/.bash_logout
 ln -s ~/.bash/bash_profile ~/.bash_profile
 ln -s ~/.bash/dircolors.old ~/.dircolors
+
+# download and install Vim resource files from GitHub
+cd ~
+git clone http://github.com/jeffskinnerbox/.vim
+
+# create the virtual links to the Vim resource file
+cd ~
+mkdir ~/tmp/old_vim_files
+mv  .vimrc .gvimrc ~/tmp/old_vim_files
+ln -s ~/.vim/vimrc ~/.vimrc
+ln -s ~/.vim/gvimrc ~/.gvimrc
+

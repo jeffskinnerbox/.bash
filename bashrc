@@ -21,6 +21,13 @@ esac
 
 
 
+################################ Define Aliases ################################
+if [ -f $HOME/.bash/bash_aliases ]; then
+    source $HOME/.bash/bash_aliases
+fi
+
+
+
 #########################  Test for Operating System  #########################
 if [ "$(uname)" == "Darwin" ]; then
     # your running on Mac OS X platform
@@ -46,13 +53,6 @@ fi
 
 
 
-################################ Define Aliases ################################
-if [ -f $HOME/.bash/bash_aliases ]; then
-    source $HOME/.bash/bash_aliases
-fi
-
-
-
 #################### Setup for Python Virtual Environments ####################
 # you first must do the following install - pip install virtualenvwrapper
 if [ -f ${HOME}/.bash/virtualenvwrapper.sh ]; then
@@ -68,6 +68,9 @@ if [ -r $HOME/.dircolors ]; then
     eval "$(dircolors $HOME/.dircolors)"
 fi
 
+
+
+############################ Setup  Dynamic Prompt #############################
 # set the bash command line prompt to color according to active virtualenv,
 # git branch and return status of last command.
 if [ -f ${HOME}/.bash/bash_prompt ]; then
@@ -95,7 +98,8 @@ shopt -s cdspell                # minor errors in cd command are corrected
 
 ############################# Environment Variable #############################
 export TERM="xterm-256color"    # full color Xterm
-export EDITOR=vim               # set the default editor to vim.
+export VISUAL=vim               # set the default editor to vim.
+export EDITOR="$VISUAL"
 
 
 
@@ -138,4 +142,3 @@ fi
 if [ -d "${HOME}/bin" ]; then
     PYTHONPATH="${HOME}/bin:${PYTHONPATH}"
 fi
-
