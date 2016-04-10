@@ -1,7 +1,7 @@
 # -*- mode: shell-script -*-
 #
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.6
+# Version:      1.0.7
 #
 # Shell functions to act as wrapper for Ian Bicking's virtualenv
 # (http://pypi.python.org/pypi/virtualenv)
