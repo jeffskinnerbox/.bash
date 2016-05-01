@@ -42,6 +42,8 @@ using a function.
 To clone these Bash scripts and use them on another system, execute the following:
 
     cd ~
+    rm .bashrc .bash_logout
+    sudo apt-get install wmctrl
     git clone https://github.com/jeffskinnerbox/.bash.git
     ln -s ~/.bash/bashrc ~/.bashrc
     ln -s ~/.bash/bash_login ~/.bash_login
