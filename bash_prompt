@@ -144,9 +144,9 @@ function set_bash_prompt () {
 
     # Set the bash prompt variable.
     if $I_HAVE_LIGHT_BACKGROUND ; then
-        PS1="${PYTHON_VIRTUALENV}${BWHITE}\u@\h${White}: \w ${BRANCH}${PROMPT_SYMBOL} "
+        PS1="${PYTHON_VIRTUALENV}${BWHITE}\u@\h${WHITE}: \w ${BRANCH}${PROMPT_SYMBOL} "
     else
-        PS1="${PYTHON_VIRTUALENV}${BGREEN}\u@\h${White}: \w ${BRANCH}${PROMPT_SYMBOL} "
+        PS1="${PYTHON_VIRTUALENV}${BGREEN}\u@\h${WHITE}: \w ${BRANCH}${PROMPT_SYMBOL} "
     fi
 
     # Set title on the terminal window
