@@ -276,7 +276,7 @@ function my_os {
 # curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' | sed -e 's/<.*$//'
 function my_ip {
     # local IP addresses provided to the system
-    /sbin/ifconfig |grep -B1 "inet addr" |awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' | awk -F: '{ print $1 ": " $3 }'
+    /sbin/ifconfig | grep -B1 "inet addr" | awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' | awk -F: '{ print $1 ": " $3 }'
 
     # extenal IP address
     curl ipecho.net/plain ; echo "   - external IP address"
