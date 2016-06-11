@@ -98,8 +98,10 @@ shopt -s cdspell                # minor errors in cd command are corrected
 
 ############################# Environment Variable #############################
 export TERM="xterm-256color"    # full color Xterm
-export VISUAL=vim               # set the default editor to vim.
-export EDITOR="$VISUAL"
+export VISUAL=vim               # set the default visual editor to vim (also i3 default)
+export EDITOR="$VISUAL"         # default text editor
+export TERMINAL=gnome-terminal  # default terminal for i3 window manager
+export PAGER=pg                 # default pager for i3 window manager
 
 
 
