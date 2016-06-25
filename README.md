@@ -43,10 +43,14 @@ To clone these Bash scripts and use them on another system, execute the followin
 
     cd ~
     rm .bashrc .bash_logout
-    sudo apt-get install wmctrl
+    sudo apt-get install wmctrl python python-pip
+    sudo pip install virtualenv virtualenvwrapper
     git clone https://github.com/jeffskinnerbox/.bash.git
     ln -s ~/.bash/bashrc ~/.bashrc
     ln -s ~/.bash/bash_login ~/.bash_login
     ln -s ~/.bash/bash_logout ~/.bash_logout
     ln -s ~/.bash/bash_profile ~/.bash_profile
     ln -s ~/.bash/dircolors.old ~/.dircolors
+    sudo cp ~/.bash/virtualenvwrapper.sh ~/.bash/virtualenvwrapper_lazy.sh /usr/local/bin
+
+
