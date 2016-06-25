@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.7
+# Version:      1.0.8
 #
 # Check out these posts:
 # Using Git and Github to Manage Your Dotfiles - http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
