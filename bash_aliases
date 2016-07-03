@@ -33,7 +33,8 @@ fi
 
 alias clr='clear'                       # clear the screen
 alias cls='clear'                       # clear the screen
-alias chrome='chromium-browser'         # Linux version of Chrome web browser
+#alias chrome='chromium-browser'         # Linux version of Chrome web browser
+alias chrome='google-chrome'            # Google's port of Chrome web browser to Linux
 alias grc='gnuradio-companion'          # Short hand for GNU Radio Companion
 alias du='du -kh'                       # Makes a more readable output of estimated file space usage
 alias df='df -kh'                       # Makes a more readable output of file system disk space usage
