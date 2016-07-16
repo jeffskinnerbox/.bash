@@ -211,6 +211,23 @@ function ask {
     esac
 }
 
+# Print the pixel dimentions of an image file
+function pix_size {
+    if [ "$#" -eq 1 ]; then
+        identify -format 'width=%w height=%h' $@
+    else
+        for var in "$@"
+        do
+            if [ -d $var ]; then
+                :        # no-op token
+            else
+                echo -n "$var : "
+                identify -format 'width=%w height=%h' $var
+            fi
+        done
+    fi
+}
+
 # Print all the processes associated with you
 function my_ps {
     /bin/ps $@ -u $USER -o pid,%cpu,%mem,bsdtime,command
