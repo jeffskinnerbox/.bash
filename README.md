@@ -1,3 +1,5 @@
+##### Version:      1.0.9
+
 # Bash Dotfiles
 **Bash Dotfiles** is a mash up of my bash profile/resource files, scripts, functions,
 aliases and other bash stuff I have created, found, or more likely ripped off from others.
