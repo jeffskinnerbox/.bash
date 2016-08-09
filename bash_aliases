@@ -53,14 +53,14 @@ alias egrep='egrep --color=auto'
 # Add some easy shortcuts for formatted directory listings and add a touch of color.
 if [ "${OPSYS}" = 'OS X' ]; then
     alias ls='ls -G'                    # color by file type
-    alias lsl='ls -G -l'                # long form
+    alias lsl='ls -G -lt'               # long form and sort by time
     alias lsa='ls -G -A'                # show hiden files
     alias la='ls -G -A'                 # show hiden files
     alias lsal='ls -G -A -l'            # long form with hiden files
     alias ls.='ls -G -d .*'             # show only hidden files
 else
     alias ls='ls --color=auto'          # color by file type
-    alias lsl='ls --color=auto -l'      # long form
+    alias lsl='ls --color=auto -lt'     # long form and sort by time
     alias lsa='ls --color=auto -A'      # show hiden files
     alias la='ls --color=auto -A'       # show hiden files
     alias lsal='ls --color=auto -A -l'  # long form with hiden files
