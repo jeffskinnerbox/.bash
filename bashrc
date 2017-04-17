@@ -121,13 +121,12 @@ shopt -s cmdhist           # save multiple-line commands in history
 
 ################################## Set Paths ##################################
 # Set PATH so it includes user's private bin if it exists
-if [ -d "${HOME}/bin" ]; then
-    PATH="${HOME}/bin:${PATH}"
-fi
+#if [ -d "${HOME}/bin" ]; then
+#    PATH="${HOME}/bin:${PATH}"
+#fi
 
 # Added by the Heroku Toolbelt
 PATH="$PATH:/usr/local/heroku/bin"
-
 export PATH
 
 # Set MANPATH so it includes users' private man if it exists
@@ -144,3 +143,7 @@ fi
 if [ -d "${HOME}/bin" ]; then
     PYTHONPATH="${HOME}/bin:${PYTHONPATH}"
 fi
+
+# added by nvm install script
+export NVM_DIR="/home/jeff/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
