@@ -120,6 +120,16 @@ shopt -s cmdhist           # save multiple-line commands in history
 
 
 ################################## Set Paths ##################################
+# Set PYTHONPATH so it includes user's private bin if it exists
+if [ -d "${HOME}/.local/bin" ]; then
+    PYTHONPATH="${HOME}/.local/bin"
+fi
+export PYTHONPATH
+
+# added python path to standard path to pickup shebang files
+PATH="$PATH:$PYTHONPATH"
+export PATH
+
 # Set PATH so it includes user's private bin if it exists
 #if [ -d "${HOME}/bin" ]; then
 #    PATH="${HOME}/bin:${PATH}"
@@ -139,10 +149,6 @@ if [ -d "${HOME}/info" ]; then
     INFOPATH="${HOME}/info:${INFOPATH}"
 fi
 
-# Set PYTHONPATH so it includes user's private bin if it exists
-if [ -d "${HOME}/bin" ]; then
-    PYTHONPATH="${HOME}/bin:${PYTHONPATH}"
-fi
 
 # added by nvm install script
 export NVM_DIR="/home/jeff/.nvm"
