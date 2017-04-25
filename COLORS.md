@@ -1,4 +1,7 @@
-##### Version:      1.0.9
+<!--
+Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
+Version:      1.0.9
+-->
 
 # Colorizing Directory Listings
 [`dircolors`][01] is a utility for color settings of ls, grep, etc.

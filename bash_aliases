@@ -292,6 +292,7 @@ function my_os {
 # Get IP address
 # http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
 # curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' | sed -e 's/<.*$//'
+# curl -s https://api.ipify.org?format=json
 function my_ip {
     # local IP addresses provided to the system
     /sbin/ifconfig | grep -B1 "inet addr" | awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' | awk -F: '{ print $1 ": " $3 }'

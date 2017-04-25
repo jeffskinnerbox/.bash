@@ -1,4 +1,7 @@
-##### Version:      1.0.9
+<!--
+Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
+Version:      1.0.9
+-->
 
 # TO DO LIST
 

@@ -1,4 +1,7 @@
-##### Version:      1.0.9
+<!--
+Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
+Version:      1.0.9
+-->
 
 # Bash Dotfiles
 **Bash Dotfiles** is a mash up of my bash profile/resource files, scripts, functions,

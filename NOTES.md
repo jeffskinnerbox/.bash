@@ -1,4 +1,7 @@
-##### Version:      1.0.9
+<!--
+Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
+Version:      1.0.9
+-->
 
 # Notes
 In here are instructions on the creation, maintenance, and use of this repository
@@ -6,6 +9,8 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 
 * [Using Git and Github to Manage Your Dotfiles][03]
 * [Managing dot files with Git][04]
+
+Check this out: [git - the simple guide just a simple guide for getting started with git. no deep shit ;)](http://rogerdudler.github.io/git-guide/)
 
 ## Managing the Git Repository and GitHub
 ====
