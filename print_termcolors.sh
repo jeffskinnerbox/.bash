@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.9
+# Version:      1.0.10
 
 if [ -f $HOME/.bash/bash_colors ]; then
     source $HOME/.bash/bash_colors

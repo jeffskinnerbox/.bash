@@ -1,5 +1,5 @@
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.9
+# Version:      1.0.10
 #
 # DESCRIPTION:
 # This file is executed for interactive non-login shells, while .bash_profile
