@@ -290,12 +290,13 @@ function my_os {
 }
 
 # Get IP address
-# http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
-# curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' | sed -e 's/<.*$//'
 # curl -s https://api.ipify.org?format=json
+# http://askubuntu.com/questions/95910/command-for-determining-my-public-ip
+# https://askubuntu.com/questions/430853/how-do-i-find-my-internal-ip-address
+# curl -s checkip.dyndns.org | sed -e 's/.*Current IP Address: //' | sed -e 's/<.*$//'
 function my_ip {
     # local IP addresses provided to the system
-    /sbin/ifconfig | grep -B1 "inet addr" | awk '{ if ( $1 == "inet" ) { print $2 } else if ( $2 == "Link" ) { printf "%s:" ,$1 } }' | awk -F: '{ print $1 ": " $3 }'
+    ip route get 8.8.8.8 | awk '{print $NF; exit}'
 
     # extenal IP address
     curl ipecho.net/plain ; echo "   - external IP address"
