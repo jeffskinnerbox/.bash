@@ -310,5 +310,6 @@ function findfile {
 
 # remind yourself of an alias (given some part of it)
 function showa {
-    /bin/grep -i -a1 $@ ~/.bash/bash_aliases | /bin/grep -v '^\s*$'
+    #/bin/grep -i -a1 $@ ~/.bash/bash_aliases | /bin/grep -v '^\s*$'
+    /bin/grep -e alias -e function ~/.bash/bash_aliases | /bin/grep $@
 }
