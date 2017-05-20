@@ -119,13 +119,16 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 # Trash is part of the FreeDesktop.org Trash Specification. It remembers the name,
 # original path, deletion date, and permissions of each trashed file.
 # Also see utilities list-trash, restore-trash, and empty-trash.
-function rmt {
+function rmtrash {
     trash $*                 # NOTE: for Mac OX, you must do "brew install trash"
+    echo -e "${BRed}The files have been move to the trash bin.${NColor}"
 }
+alias rmt=rmtrash
 
 # Move files to $HOME/tmp instead of deleting them
 function rmtmp {
     mv $* $HOME/tmp
+    echo -e ${BRed}"The files have been move to $HOME/tmp.${NColor}"
 }
 
 # Set the title of the terminal window
