@@ -11,4 +11,7 @@
 if [ -f "${HOME}/.bashrc" ] ; then
     source "${HOME}/.bashrc"
 fi
-
+#
+# virtualenv and virtualenvwrapper
+export WORKON_HOME=$HOME/.virtualenvs
+source /usr/local/bin/virtualenvwrapper.sh
