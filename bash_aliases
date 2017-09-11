@@ -45,7 +45,6 @@ alias ports='netstat -tulanp'           # list all TCP/UDP port
 alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 
 # Enables color support of ls, grep, and other colorized utilities
-alias ls='ls -G --group-directories-first'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
@@ -59,7 +58,7 @@ if [ "${OPSYS}" = 'OS X' ]; then
     alias lsal='ls -G -A -l'            # long form with hiden files
     alias ls.='ls -G -d .*'             # show only hidden files
 else
-    alias ls='ls --color=auto'          # color by file type
+    alias ls='ls --group-directories-first --color=auto'  # color by file type
     alias lsl='ls --color=auto -lt'     # long form and sort by time
     alias lsa='ls --color=auto -A'      # show hiden files
     alias la='ls --color=auto -A'       # show hiden files
