@@ -45,7 +45,7 @@ alias ports='netstat -tulanp'           # list all TCP/UDP port
 alias update='sudo apt-get update && sudo apt-get dist-upgrade'
 
 # Enables color support of ls, grep, and other colorized utilities
-alias ls='ls -G'
+alias ls='ls -G --group-directories-first'
 alias grep='grep --color=auto'
 alias fgrep='fgrep --color=auto'
 alias egrep='egrep --color=auto'
