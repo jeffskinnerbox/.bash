@@ -55,10 +55,10 @@ fi
 
 #################### Setup for Python Virtual Environments ####################
 # you first must do the following install - pip install virtualenvwrapper
-if [ -f ${HOME}/.bash/virtualenvwrapper.sh ]; then
-    export WORKON_HOME="$HOME/.virtualenvs"
-    source ${HOME}/.bash/virtualenvwrapper.sh
-fi
+#if [ -f ${HOME}/.bash/virtualenvwrapper.sh ]; then
+#    export WORKON_HOME="$HOME/.virtualenvs"
+#    source ${HOME}/.bash/virtualenvwrapper.sh
+#fi
 
 
 
