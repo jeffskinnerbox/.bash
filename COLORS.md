@@ -1,6 +1,6 @@
 <!--
 Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-Version:      1.0.10
+Version:      1.1.0
 -->
 
 # Colorizing Directory Listings
@@ -12,7 +12,6 @@ for color output.
 `dircolors` prints out `LS_COLORS='...'; export LS_COLORS`,
 so eval'ing `$(dircolors)` effectively sets the `LS_COLORS` environment variable.
 Therefore, the typical usage is:
-
 
     eval "$(dircolors [option] … [file])"
 

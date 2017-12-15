@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 # 
 # Maintainer:   jeffskinnerbox@yahoo.com / www.jeffskinnerbox.me
-# Version:      1.0.8
+# Version:      1.1.0
 #
 # A utility script to test out dircolors settings without reloading
 # Usage: dircolortest <dircolors file>
