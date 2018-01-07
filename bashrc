@@ -53,6 +53,12 @@ fi
 
 
 
+################## Setup for Python Development Environments ##################
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
+
+
 #################### Setup for Python Virtual Environments ####################
 # you first must do the following install - pip install virtualenvwrapper
 #if [ -f ${HOME}/.bash/virtualenvwrapper.sh ]; then
@@ -80,13 +86,13 @@ fi
 
 
 ############################ Enable Bash Completion ############################
-if ! shopt -oq posix; then
-    if [ -f /usr/share/bash-completion/bash_completion ]; then
-        source /usr/share/bash-completion/bash_completion
-    elif [ -f /etc/bash_completion ]; then
-        source /etc/bash_completion
-  fi
-fi
+#if ! shopt -oq posix; then
+#    if [ -f /usr/share/bash-completion/bash_completion ]; then
+#        source /usr/share/bash-completion/bash_completion
+#    elif [ -f /etc/bash_completion ]; then
+#        source /etc/bash_completion
+#  fi
+#fi
 
 
 
@@ -101,7 +107,8 @@ export TERM="xterm-256color"    # full color Xterm
 export VISUAL=vim               # set the default visual editor to vim (also i3 default)
 export EDITOR="$VISUAL"         # default text editor
 export TERMINAL=gnome-terminal  # default terminal for i3 window manager
-export PAGER=pg                 # default pager for i3 window manager
+export PAGER=less               # default pager for i3 window manager
+export MANPAGER=less            # in case your linux has less & more but no pg
 
 
 

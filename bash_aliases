@@ -31,6 +31,7 @@ if [ "${OPSYS}" = 'Linux' ]; then
         alias vim='gnome-terminal --execute vim "$@"'
 fi
 
+alias pg='less'                         # in case your linux has less & more but no pg
 alias clr='clear'                       # clear the screen
 alias cls='clear'                       # clear the screen
 #alias chrome='chromium-browser'         # Linux version of Chrome web browser
