@@ -214,7 +214,7 @@ function ask {
     esac
 }
 
-# Print the pixel dimentions of an image file
+# Print the pixel dimensions of an image file
 function pix_size {
     if [ "$#" -eq 1 ]; then
         identify -format 'width=%w height=%h' $@
@@ -290,6 +290,27 @@ function my_os {
         # your running on Windows NT platform
         echo "Microsoft Windows NT"
     fi
+}
+
+# ping sweep, without nmap, to get IP & MAC for networks entire set of devices
+# commandline version
+# to get host name: nslookup <ipadd>  or  host -t ptr <ipadd>
+function ip_scan {
+    # replace with
+    # prefix=$(ip route get 8.8.8.8 | awk '{print $NF; exit}' | ???)
+    prefix="192.168.1"
+
+    # header for ping sweep
+    echo -e "IP Address\tMAC Address"
+
+    # perform ping sweep
+    for i in `seq 254`;
+    do
+        (sleep 0.5 && ping -c1 -w1 $prefix.$i &> /dev/null && arp -n | awk ' /'$prefix'.'$i' / { print $1 "\t" $3 } ') &
+    done
+
+    # waits for all pings to complete
+    wait
 }
 
 # Get IP address
