@@ -39,7 +39,7 @@ set colored-stats On
 set completion-ignore-case On
 
 # on menu-complete, first display the common prefix, then cycle through the options when hitting TAB
-menu-complete-display-prefix on
+set menu-complete-display-prefix on
 
 # sets 3 to be the maximum number of characters to be the common prefix to display for completions.
 # if the common prefix has more than 3 characters, they are replaced by ellipsis.
