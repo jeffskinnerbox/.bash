@@ -7,10 +7,15 @@ Version:      1.1.0
 In here are instructions on the creation, maintenance, and use of this repository
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
+* [git - the simple guide](http://rogerdudler.github.io/git-guide/)
 * [Using Git and Github to Manage Your Dotfiles][03]
 * [Managing dot files with Git][04]
-
-Check this out: [git - the simple guide just a simple guide for getting started with git. no deep shit ;)](http://rogerdudler.github.io/git-guide/)
+* [The most useful git commands](https://orga.cat/posts/most-useful-git-commands)
+* [git - the simple guide just a simple guide for getting started with git. no deep shit ;)](http://rogerdudler.github.io/git-guide/)
+* [Useful tricks you might not know about Git stash](https://medium.freecodecamp.org/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a)
+* [Git Tutorial](http://fab.cba.mit.edu/classes/4.140/doc/git/)
+* [What is git?](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/version_control/index.html)
+* [The most useful git commands](https://orga.cat/posts/most-useful-git-commands)
 
 ## Managing the Git Repository and GitHub
 ====

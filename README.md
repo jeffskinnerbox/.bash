@@ -32,6 +32,7 @@ it is possible to use a different set of keybindings.
 Any user can customize programs that use Readline by putting commands in an `$HOME/.inputrc` file.
 If that file does not exist or cannot be read, the ultimate default is `/etc/inputrc`.
 
+* [LINUX FU: CUSTOM BASH COMMAND COMPLETION](https://hackaday.com/2018/01/19/linux-fu-custom-bash-command-completion/)
 * [A ~/.inputrc for Humans](https://www.topbug.net/blog/2017/07/31/inputrc-for-humans/)
 * [Inputrc Syntax](https://ss64.com/bash/syntax-inputrc.html)
 * [The most important command-line tip - incremental history searching with .inputrc](http://codeinthehole.com/tips/the-most-important-command-line-tip-incremental-history-searching-with-inputrc/)
