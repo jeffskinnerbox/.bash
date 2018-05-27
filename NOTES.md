@@ -20,6 +20,9 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [13 Git tips for Git's 13th birthday](https://opensource.com/article/18/4/git-tips)
 * [A Tutorial on Git Merge](https://dzone.com/articles/a-tutorial-on-git-merge)
 * [A guide to Git branching](https://opensource.com/article/18/5/git-branching)
+* [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
+* [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
+* [Advanced Git Commands: Rewriting History](https://dzone.com/articles/advanced-git-commands-rewriting-history)
 
 ## Managing the Git Repository and GitHub
 ====
@@ -45,7 +48,6 @@ You can add these files when you push your project to GitHub.
 Go to [GitHub][02] and create the new repository called jupyter-notebook.
 
     goto https://github.com/jupyter-notebooks
-
 
 ### Creating the Local Git Repository
 Make the .bash directory, move into it, and initialize it as a git repository

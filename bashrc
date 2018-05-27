@@ -137,6 +137,12 @@ export PYTHONPATH
 PATH="$PATH:$PYTHONPATH"
 export PATH
 
+# Set SPLUNK_HOME if your have installed splunk
+if [ -d "/opt/splunk" ]; then
+    SPLUNK_HOME="/opt/splunk"
+fi
+export SPLUNK_HOME
+
 # Set PATH so it includes user's private bin if it exists
 #if [ -d "${HOME}/bin" ]; then
 #    PATH="${HOME}/bin:${PATH}"
