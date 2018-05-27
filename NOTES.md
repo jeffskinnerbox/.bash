@@ -16,14 +16,36 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Git Tutorial](http://fab.cba.mit.edu/classes/4.140/doc/git/)
 * [What is git?](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/version_control/index.html)
 * [The most useful git commands](https://orga.cat/posts/most-useful-git-commands)
+* [How to recover from a git mistake](https://opensource.com/article/17/8/recover-dropped-data-stash)
+* [13 Git tips for Git's 13th birthday](https://opensource.com/article/18/4/git-tips)
+* [A Tutorial on Git Merge](https://dzone.com/articles/a-tutorial-on-git-merge)
+* [A guide to Git branching](https://opensource.com/article/18/5/git-branching)
 
 ## Managing the Git Repository and GitHub
 ====
+### Install Conky Package
+To install Corky
+
+    sudo apt-get install conky-std
+
+You'll use the [Corky Config Settings][05] to describe general features of how you want your Conky to appear,
+and the [Corky Variables][06] to define what actually gets displayed.
+
 ### Creating the GitHub Repository
 Goto GitHub and create the new repository
 
     goto https://github.com/jeffskinnerbox
     <create empty repository called '.bash'>
+
+### Creating Your Remote GitHub Repository
+Create a new repository on GitHub.
+To avoid errors, do not initialize the new repository with README, license, or gitignore files.
+You can add these files when you push your project to GitHub.
+
+Go to [GitHub][02] and create the new repository called jupyter-notebook.
+
+    goto https://github.com/jupyter-notebooks
+
 
 ### Creating the Local Git Repository
 Make the .bash directory, move into it, and initialize it as a git repository
@@ -32,6 +54,7 @@ Make the .bash directory, move into it, and initialize it as a git repository
     mkdir .bash
     cd .bash
     git init
+
 Now create the README, bash_aliases, bash_logout, bash_profile, and bashrc files.
 
 Also create the file .gitignore like this:
@@ -77,6 +100,75 @@ Also create the file .gitignore like this:
     ehthumbs.db
     Thumbs.db
 
+```bash
+### ------------------------- Project Specific ------------------------- ###
+
+### Videos & Images ###
+*.mp4
+*.avi
+*.webm
+*.mkv
+*.png
+*.jpg
+*.tif
+*.gif
+
+### Jupyter Files ###
+Untitled.ipynb
+
+### ----------------------------- General ------------------------------ ###
+
+### Compiled Source ###
+*.pyc
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+### Packages ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+### backup file ###
+*.backup
+
+### Unit Test / Coverage Reports
+htmlcov/
+.tox/
+.coverage
+.cache
+nosetests.xml
+coverage.xml
+
+### Logs & Databases ###
+*.log
+*.sql
+*.sqlite
+.ipynb_checkpoints
+.ropeproject
+__pycache__
+
+### OS Generated Files ###
+*.out
+*.swp
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+```
+
 Now commit the files to the git repository:
 
     git add --all
@@ -97,6 +189,27 @@ add files (or remove) that are required, and then do the commit to the local git
     git add --all
     git commit --dry-run
     git commit -m <comment>
+
+#### Store Credentials Within Git
+To add a new remote,
+use the `git remote add` command on the terminal,
+in the directory your repository is stored at.
+
+    cd ~/jupyter-notebooks
+
+    # set your remote repository URL
+    git remote add origin https://github.com/jeffskinnerbox/jupyter-notebooks.git
+
+    # verifies the new remote URL
+    git remote -v
+
+    # pushes the changes in your local repository up to the remote repository
+    git push -u origin master
+
+>**NOTE**: Other operations
+[rename an existing remote](https://help.github.com/articles/renaming-a-remote/),
+[delete an existing remote](https://help.github.com/articles/removing-a-remote/).
+
 
 ### Updating the Remote Repository (i.e. GitHub)
 To which shows you the URL that Git has stored for the shortname for
@@ -123,6 +236,90 @@ Then the `git reset` resets the master branch to what you just fetched.
 The `--hard` option changes all the files in your working tree to match the files in `origin/master`.
 If you have any files that are _not_ tracked by Git,
 these files will not be affected.
+
+================================================================================
+## Updating a Git Repository
+
+### Updating the Local Git Repository
+Within the .vim directory, do a "get status" to see what will be included in the commit,
+add files (or remove) that are required, and then do the commit to the local git repository.
+
+    git status
+    git add --all
+    git commit --dry-run
+    git commit -m <comment>
+
+### Retrieving Update From Remote Repository (i.e. GitHub)
+To retrieve these updates on another system, use
+
+    git pull origin master
+
+To overwrite everything in the local directory
+
+    git fetch --all
+    git reset --hard origin/master
+
+Explanation: `git fetch` downloads the latest from remote without trying to merge or rebase anything.
+Then the `git reset` resets the master branch to what you just fetched.
+The `--hard` option changes all the files in your working tree to match the files in `origin/master`.
+If you have any files that are _not_ tracked by Git,
+these files will not be affected.
+
+### Updating the Remote Repository (i.e. GitHub)
+To which shows you the URL that Git has stored for the shortname for
+the remote repository (i.e. GitHub):
+
+    git remote -v
+
+Now to push your files to the GitHub repository
+
+    git push -u origin master
+
+================================================================================
+## Cloning a Git Repository
+
+### Clone This Git Repository
+Copy this Git repository into your local systems:
+
+================================================================================
+
+time to install my personal tools on another device.
+
+```bash
+# execute the pyenv installer
+curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+
+# tool to check for window manager
+sudo apt-get install wmctrl
+# install tools for vim text editor
+
+cd ~
+git clone https://github.com/jeffskinnerbox/.vim.git
+ln -s ~/.vim/vimrc ~/.vimrc
+mkdir ~/.vim/backup
+mkdir ~/.vim/tmp
+
+# install tools for bash shell
+cd ~
+git clone https://github.com/jeffskinnerbox/.bash.git
+rm .bashrc .bash_logout
+ln -s ~/.bash/bashrc ~/.bashrc
+ln -s ~/.bash/bash_login ~/.bash_login
+ln -s ~/.bash/bash_logout ~/.bash_logout
+ln -s ~/.bash/bash_profile ~/.bash_profile
+ln -s ~/.bash/dircolors.old ~/.dircolors
+sudo cp ~/.bash/virtualenvwrapper.sh ~/.bash/virtualenvwrapper_lazy.sh /usr/local/bin
+sudo pip install virtualenvwrapper
+
+# install X configuration files
+cd ~
+git clone https://github.com/jeffskinnerbox/.X.git
+ln -s ~/.X/xbindkeysrc ~/.xbindkeysrc
+ln -s ~/.X/Xresources ~/.Xresources
+ln -s ~/.X/xsessionrc ~/.xsessionrc
+```
+
+
 
 
 
