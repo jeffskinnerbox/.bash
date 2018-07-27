@@ -332,6 +332,12 @@ function my_ip {
     curl ipecho.net/plain ; echo "   - external IP address"
 }
 
+# Make a new directory and change into it in one step
+mkcd () {
+    mkdir -p "$*"
+    cd "$*"
+}
+
 # Moving thought the current directory and its sub-directories,
 # find a file that contains a give string
 function findfile {
