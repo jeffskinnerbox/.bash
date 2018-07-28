@@ -53,10 +53,16 @@ fi
 
 
 
+######################## Setup for Ansible Environment #########################
+export ANSIBLE_ROLES_PATH="$HOME/src/ansible-roles"
+
+
+
 ################## Setup for Python Development Environments ##################
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
 
 
 #################### Setup for Python Virtual Environments ####################
