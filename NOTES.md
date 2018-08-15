@@ -25,14 +25,21 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Advanced Git Commands: Rewriting History](https://dzone.com/articles/advanced-git-commands-rewriting-history)
 
 ## Managing the Git Repository and GitHub
-====
-### Install Conky Package
-To install Corky
+* [Follow these simple rules and you’ll become a Git and GitHub master](https://medium.freecodecamp.org/follow-these-simple-rules-and-youll-become-a-git-and-github-master-e1045057468f)
 
-    sudo apt-get install conky-std
+Use three simple rules when using Git / Github:
 
-You'll use the [Corky Config Settings][05] to describe general features of how you want your Conky to appear,
-and the [Corky Variables][06] to define what actually gets displayed.
+1. **Rule #1: Create a Git repository for every new project** -
+Every time you start working on something new, you should create a new Git repository and push it to GitHub.
+1. **Rule #2: Create a new branch for every new feature** -
+When creating a new feature, create a dedicated branch for this new feature,
+give it a meaningful name, and commit all the code to that specific branch.
+1. **Rule #3: Use Pull Requests to merge code to Master** -
+You should never push changes directly to the master branch.
+Instead, you should use feature branches as described above,
+and open a new Pull Request to merge the feature branch code with the master branch code.
+
+================================================================================
 
 ### Creating the GitHub Repository
 Goto GitHub and create the new repository
@@ -240,6 +247,7 @@ If you have any files that are _not_ tracked by Git,
 these files will not be affected.
 
 ================================================================================
+
 ## Updating a Git Repository
 
 ### Updating the Local Git Repository
@@ -278,6 +286,7 @@ Now to push your files to the GitHub repository
     git push -u origin master
 
 ================================================================================
+
 ## Cloning a Git Repository
 
 ### Clone This Git Repository
@@ -293,25 +302,16 @@ curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv
 
 # tool to check for window manager
 sudo apt-get install wmctrl
-# install tools for vim text editor
 
+# setup your vim environment
 cd ~
 git clone https://github.com/jeffskinnerbox/.vim.git
 ln -s ~/.vim/vimrc ~/.vimrc
 mkdir ~/.vim/backup
 mkdir ~/.vim/tmp
-
-# install tools for bash shell
-cd ~
-git clone https://github.com/jeffskinnerbox/.bash.git
-rm .bashrc .bash_logout
-ln -s ~/.bash/bashrc ~/.bashrc
-ln -s ~/.bash/bash_login ~/.bash_login
-ln -s ~/.bash/bash_logout ~/.bash_logout
-ln -s ~/.bash/bash_profile ~/.bash_profile
-ln -s ~/.bash/dircolors.old ~/.dircolors
-sudo cp ~/.bash/virtualenvwrapper.sh ~/.bash/virtualenvwrapper_lazy.sh /usr/local/bin
-sudo pip install virtualenvwrapper
+cd ~/.vim
+git submodule init
+git submodule update
 
 # install X configuration files
 cd ~
@@ -319,9 +319,20 @@ git clone https://github.com/jeffskinnerbox/.X.git
 ln -s ~/.X/xbindkeysrc ~/.xbindkeysrc
 ln -s ~/.X/Xresources ~/.Xresources
 ln -s ~/.X/xsessionrc ~/.xsessionrc
+
+# install tools for bash shell
+cd ~
+git clone https://github.com/jeffskinnerbox/.bash.git
+rm ~/.bashrc ~/.bash_logout
+ln -s ~/.bash/bashrc ~/.bashrc
+ln -s ~/.bash/bash_login ~/.bash_login
+ln -s ~/.bash/bash_logout ~/.bash_logout
+ln -s ~/.bash/bash_profile ~/.bash_profile
+ln -s ~/.bash/dircolors.old ~/.dircolors
+
+# setup pyenv by executing the pyenv installer
+curl -s https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 ```
-
-
 
 
 
@@ -329,3 +340,9 @@ ln -s ~/.X/xsessionrc ~/.xsessionrc
 [02]:https://github.com/
 [03]:http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
 [04]:http://blog.sanctum.geek.nz/managing-dot-files-with-git/
+[05]:
+[06]:
+[07]:
+[08]:
+[09]:
+[10]:
