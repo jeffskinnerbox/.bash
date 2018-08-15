@@ -49,9 +49,10 @@ Goto GitHub and create the new repository
 
 To do this from the commandline, let first create the local git repository:
 
-    touch README.md
     git init
-    git add README.md
+    touch README.md
+    curl -s https://raw.githubusercontent.com/jeffskinnerbox/.bash/master/.gitignore > .gitignore
+    git add --all
     git commit -m "first commit"
 
 Now push this repository from the command line:
