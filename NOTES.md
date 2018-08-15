@@ -47,6 +47,18 @@ Goto GitHub and create the new repository
     goto https://github.com/jeffskinnerbox
     <create empty repository called '.bash'>
 
+To do this from the commandline, let first create the local git repository:
+
+    touch README.md
+    git init
+    git add README.md
+    git commit -m "first commit"
+
+Now push this repository from the command line:
+
+    curl -u 'jeffskinnerbox' https://api.github.com/user/repos -d "{\"name\":\"nonexistent-project\"}"
+    git push -u origin master
+
 ### Creating Your Remote GitHub Repository
 Create a new repository on GitHub.
 To avoid errors, do not initialize the new repository with README, license, or gitignore files.
