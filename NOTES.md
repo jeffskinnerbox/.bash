@@ -23,6 +23,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
 * [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
 * [Advanced Git Commands: Rewriting History](https://dzone.com/articles/advanced-git-commands-rewriting-history)
+* [How to find stuff in Git](https://www.tygertec.com/find-stuff-git/)
 
 ## Managing the Git Repository and GitHub
 * [Follow these simple rules and you’ll become a Git and GitHub master](https://medium.freecodecamp.org/follow-these-simple-rules-and-youll-become-a-git-and-github-master-e1045057468f)
@@ -333,10 +334,15 @@ ln -s ~/.X/xbindkeysrc ~/.xbindkeysrc
 ln -s ~/.X/Xresources ~/.Xresources
 ln -s ~/.X/xsessionrc ~/.xsessionrc
 
+# rebuilding $HOME/.Xauthority to avoid MIT magic cookie error
+touch ~/.Xauthority
+xauth generate :0 . trusted
+xauth add ${HOST}:0 . `xxd -l 16 -p /dev/urandom`
+
 # install tools for bash shell
 cd ~
-git clone https://github.com/jeffskinnerbox/.bash.git
 rm ~/.bashrc ~/.bash_logout
+git clone https://github.com/jeffskinnerbox/.bash.git
 ln -s ~/.bash/bashrc ~/.bashrc
 ln -s ~/.bash/bash_login ~/.bash_login
 ln -s ~/.bash/bash_logout ~/.bash_logout
@@ -345,6 +351,8 @@ ln -s ~/.bash/dircolors.old ~/.dircolors
 
 # setup pyenv by executing the pyenv installer
 curl -s https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
+pyenv install 3.6.4         # install python 3.6.4 via pyenv
+pyenv rehash                # assure the pyenv shims are updated
 ```
 
 
