@@ -9,6 +9,7 @@ Version:      1.1.0
 * [COLORS-Dircolors](http://www.linux-sxs.org/housekeeping/dircolor.html)
 * [BASH shell aliases I can't live without](http://bicchi.blogspot.com/2007/03/bash-shell-aliases-i-cant-leave-without.html)
 * [Git Basics - Tips and Tricks](http://git-scm.com/book/en/Git-Basics-Tips-and-Tricks)
+* [Linux Fu: Modernize Your Command Line](https://hackaday.com/2018/08/29/linux-fu-modernize-your-command-line/)
 * [bash-it](https://github.com/revans/bash-it)
 * [Advanced Bash-Scripting GuideAdvanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/)
 * [FULL 256 COLOR SUPPORT FOR VIM AND/OR XTERM ON UBUNTU 12.04](http://emerg3nc3.wordpress.com/2012/07/28/full-256-color-support-for-vim-andor-xterm-on-ubuntu-12-04/)
