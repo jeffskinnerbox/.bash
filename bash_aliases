@@ -303,9 +303,8 @@ function wifi_scan {
 # commandline version: (echo -e "IP Address\tMAC Address" ; prefix="192.168.1" && for i in `seq 254`; do (sleep 0.5 && ping -c1 -w1 $prefix.$i &> /dev/null && arp -n | awk ' /'$prefix'.'$i' / { print $1 "\t" $3 } ') & done; wait)
 # to get host name: nslookup <ipadd>  or  host -t ptr <ipadd>
 function ip_scan {
-    # replace with
-    # prefix=$(ip route get 8.8.8.8 | awk '{print $NF; exit}' | ???)
-    prefix="192.168.1"
+    # capture the IP address prefix for your network - e.g. prefix="192.168.1"
+    prefix=$(ip route get 8.8.8.8 | awk '{print $3; exit}' | cut -d'.' -f 1,2,3)
 
     # header for ping sweep
     echo -e "IP Address\tMAC Address"
