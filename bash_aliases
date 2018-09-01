@@ -301,7 +301,6 @@ function wifi_scan {
 # EXPERIMENTAL
 # ping sweep, without nmap, to get IP & MAC for networks entire set of devices
 # commandline version: (echo -e "IP Address\tMAC Address" ; prefix="192.168.1" && for i in `seq 254`; do (sleep 0.5 && ping -c1 -w1 $prefix.$i &> /dev/null && arp -n | awk ' /'$prefix'.'$i' / { print $1 "\t" $3 } ') & done; wait)
-# to get host name: nslookup <ipadd>  or  host -t ptr <ipadd>
 function ip_scan {
     # capture the IP address prefix for your network - e.g. prefix="192.168.1"
     prefix=$(ip route get 8.8.8.8 | awk '{print $3; exit}' | cut -d'.' -f 1,2,3)
@@ -312,7 +311,6 @@ function ip_scan {
     # perform ping sweep
     for i in `seq 254`;
     do
-        # ping scan the network to assure host becomes visiable and then search for the MAC address
         (sleep 0.5 && ping -c1 -w1 $prefix.$i &> /dev/null && arp -n | awk ' /'$prefix'.'$i' / { print $1 "\t" $3 } ') &
     done
 
@@ -320,6 +318,7 @@ function ip_scan {
     wait
 }
 
+# EXPERIMENTAL
 # Get IP address
 # https://opensource.com/article/18/5/how-find-ip-address-linux
 function my_ip {
