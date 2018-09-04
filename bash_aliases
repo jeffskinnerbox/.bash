@@ -43,7 +43,8 @@ alias ports='netstat -tulanp'           # list all TCP/UDP port
 
 # update Debien / Ubuntu distro in one commandline
 #alias update='sudo apt-get update && sudo apt-get upgrade'
-alias update='sudo apt-get update && sudo apt-get dist-upgrade'
+#alias update='sudo apt-get update && sudo apt-get dist-upgrade'
+alias update='sudo apt-get update && sudo apt-get upgrade && sudo apt-get dist-upgrade'
 
 # Enables color support of ls, grep, and other colorized utilities
 alias grep='grep --color=auto'
