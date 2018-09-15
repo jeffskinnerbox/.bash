@@ -347,3 +347,42 @@ function showa {
     #/bin/grep -i -a1 $@ ~/.bash/bash_aliases | /bin/grep -v '^\s*$'
     /bin/grep -e alias -e function ~/.bash/bash_aliases | /bin/grep $@
 }
+
+# EXPERIMENTAL
+# colorized man pages
+# http://boredzo.org/blog/archives/2016-08-15/colorized-man-pages-understood-and-customized
+man() {
+        env \
+                LESS_TERMCAP_md=$(printf "\e[1;36m") \
+                LESS_TERMCAP_me=$(printf "\e[0m") \
+                LESS_TERMCAP_se=$(printf "\e[0m") \
+                LESS_TERMCAP_so=$(printf "\e[1;44;33m") \
+                LESS_TERMCAP_ue=$(printf "\e[0m") \
+                LESS_TERMCAP_us=$(printf "\e[1;32m") \
+                man "$@"
+}
+
+# -------------------------- For Personal Amussument ---------------------------
+
+# sometime you want to shrug your shoulders
+shrug() { echo "¯\_(ツ)_/¯"; }
+
+# sometimes you need to celebrate with a dance
+dance() {
+        echo "(•_•)"
+        echo "<)   )╯"
+        echo " /    \ "
+        echo ""
+        echo "\(•_•)"
+        echo " (   (>"
+        echo " /    \ "
+        echo ""
+        echo " (•_•)"
+        echo "<)   )>"
+        echo " /    \ "
+}
+
+# terminal snow that requires no shoveling
+snow() {
+        clear;while :;do echo $LINES $COLUMNS $(($RANDOM%$COLUMNS));sleep 0.1;done|gawk '{a[$3]=0;for(x in a) {o=a[x];a[x]=a[x]+1;printf "\033[%s;%sH ",o,x;printf "\033[%s;%sH*\033[0;0H",a[x],x;}}'
+}
