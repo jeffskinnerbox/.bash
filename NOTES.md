@@ -24,6 +24,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
 * [Advanced Git Commands: Rewriting History](https://dzone.com/articles/advanced-git-commands-rewriting-history)
 * [How to find stuff in Git](https://www.tygertec.com/find-stuff-git/)
+* [How to adopt a Git branching strategy](https://medium.freecodecamp.org/adopt-a-git-branching-strategy-ac729ff4f838)
 
 ## Managing the Git Repository and GitHub
 * [Follow these simple rules and you’ll become a Git and GitHub master](https://medium.freecodecamp.org/follow-these-simple-rules-and-youll-become-a-git-and-github-master-e1045057468f)
