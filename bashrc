@@ -53,6 +53,13 @@ fi
 
 
 
+#################### Setup for Arduino Makefile Environment ####################
+export ARDUINO_DIR=/home/jeff/src/arduino-Nov-5-2018                       # directory where arduino is installed
+export ARDMK_DIR=/home/jeff/src/arduino-makefile                           # directory where you have copied the makefile
+export AVR_TOOLS_DIR=/home/jeff/src/arduino-Nov-5-2018/hardware/tools/avr  # directory where avr tools are installed
+
+
+
 ######################## Setup for Ansible Environment #########################
 export ANSIBLE_ROLES_PATH="$HOME/src/ansible-roles"
 
