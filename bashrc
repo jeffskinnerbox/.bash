@@ -65,6 +65,12 @@ export ANSIBLE_ROLES_PATH="$HOME/src/ansible-roles"
 
 
 
+############## Path to Go Application Source Code and Executables ##############
+export GOPATH=$HOME/src/go_code
+export PATH=$PATH:$GOPATH/bin
+
+
+
 ################## Setup for Python Development Environments ##################
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
