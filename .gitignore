@@ -14,7 +14,7 @@
 
 ### ------------------------------- General -------------------------------- ###
 
-### Compiled Source ###
+### Compiler and Linker Files ###
 *.pyc
 *.com
 *.class
@@ -22,6 +22,8 @@
 *.exe
 *.o
 *.so
+*.bin
+*.elf
 
 ### Packages ###
 *.7z
@@ -60,3 +62,4 @@ __pycache__
 Icon?
 ehthumbs.db
 Thumbs.db
+
