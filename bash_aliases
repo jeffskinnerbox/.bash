@@ -60,12 +60,12 @@ if [ "${OPSYS}" = 'OS X' ]; then
     alias lsal='ls -G -A -l'            # long form with hiden files
     alias ls.='ls -G -d .*'             # show only hidden files
 else
-    alias ls='ls --group-directories-first --color=auto'  # color by file type
-    alias lsl='ls --color=auto -lt'     # long form and sort by time
-    alias lsa='ls --color=auto -A'      # show hiden files
-    alias la='ls --color=auto -A'       # show hiden files
-    alias lsal='ls --color=auto -A -l'  # long form with hiden files
-    alias ls.='ls --color=auto -d .*'   # show only hidden files
+    alias ls='ls -F --group-directories-first --color=auto'  # color by file type
+    alias lsl='ls --color=auto -F -lt'     # long form and sort by time
+    alias lsa='ls --color=auto -AF'        # show hiden files
+    alias la='ls --color=auto -AF'         # show hiden files
+    alias lsal='ls --color=auto -AF -l'    # long form with hiden files
+    alias ls.='ls -F --color=auto -d .*'   # show only hidden files
 fi
 alias ll='ls -alF'
 alias l='ls -CF'
