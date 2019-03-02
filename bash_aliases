@@ -337,9 +337,9 @@ mkcd () {
 }
 
 # Moving thought the current directory and its sub-directories,
-# find a file that contains a give string
+# find a file that contains a give string, case insensitive
 function findfile {
-    /usr/bin/find . -name '*'"$@"'*'
+    /usr/bin/find . -iname '*'"$@"'*'
 }
 
 # remind yourself of an alias (given some part of it)
