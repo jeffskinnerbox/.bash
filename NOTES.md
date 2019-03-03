@@ -15,6 +15,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Managing dot files with Git][04]
 * [The most useful git commands](https://orga.cat/posts/most-useful-git-commands)
 * [git - the simple guide just a simple guide for getting started with git. no deep shit ;)](http://rogerdudler.github.io/git-guide/)
+* [10 Git Commands You Should Know](https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c)
 * [Useful tricks you might not know about Git stash](https://medium.freecodecamp.org/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a)
 * [Git Tutorial](http://fab.cba.mit.edu/classes/4.140/doc/git/)
 * [What is git?](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/version_control/index.html)
