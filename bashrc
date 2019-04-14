@@ -128,6 +128,7 @@ export EDITOR="$VISUAL"         # default text editor
 export TERMINAL=gnome-terminal  # default terminal for i3 window manager
 export PAGER=less               # default pager for i3 window manager
 export MANPAGER=less            # in case your linux has less & more but no pg
+export OPENSCADPATH=$HOME/cad/openscad_libs   # search path for OpenSCAD libraries
 
 
 
