@@ -362,7 +362,7 @@ man() {
                 man "$@"
 }
 
-# -------------------------- For Personal Amussument ---------------------------
+# -------------------------- For Personal Amusement ----------------------------
 
 # sometime you want to shrug your shoulders
 shrug() { echo "¯\_(ツ)_/¯"; }
