@@ -33,6 +33,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [An introduction to Git merge and rebase: what they are, and how to use them](https://medium.freecodecamp.org/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f)
 * [Most common Git mistakes and how to fix them](https://medium.com/@i_AnkurBiswas/common-git-mistakes-and-how-to-fix-them-10184cd5fa77)
 * [How to use Tig to browse Git logs](https://opensource.com/article/19/6/what-tig)
+* [More productive Git: Tips for acquiring Git super powers](https://increment.com/open-source/more-productive-git/)
 
 ## Managing the Git Repository and GitHub
 * [Follow these simple rules and you’ll become a Git and GitHub master](https://medium.freecodecamp.org/follow-these-simple-rules-and-youll-become-a-git-and-github-master-e1045057468f)
