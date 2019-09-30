@@ -35,6 +35,13 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [How to use Tig to browse Git logs](https://opensource.com/article/19/6/what-tig)
 * [More productive Git: Tips for acquiring Git super powers](https://increment.com/open-source/more-productive-git/)
 
+* [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
+* [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
+* [Top 20 Git Commands With Examples](https://dzone.com/articles/top-20-git-commands-with-examples)
+* [Git: An Intermediate Guide (Part 1)](https://dzone.com/articles/git-an-intermediate-guide-part-1)
+* [The Advanced Git Guide: Git Stash, Reset, Rebase, and More](https://www.toptal.com/git/the-advanced-git-guide)
+* [Pro Git: The Book](https://git-scm.com/book/en/v2)
+
 ## Managing the Git Repository and GitHub
 * [Follow these simple rules and you’ll become a Git and GitHub master](https://medium.freecodecamp.org/follow-these-simple-rules-and-youll-become-a-git-and-github-master-e1045057468f)
 
