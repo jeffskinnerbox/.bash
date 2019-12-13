@@ -54,6 +54,16 @@ operations, that performs a specified task. Wherever there is repetitive code,
 when a task repeats with only slight variations in procedure, then consider
 using a function.
 
+### Debuging Bash Scripts
+You can get a trace of the entire execution of a running script by adding
+the `-x` option to its invocation of bash (e.g. `bash -x`),
+or adding `set -x` within your bash script,
+or via at the shebang top of the file (`#!/bin/bash -x` at the top of the script file).
+
+An alternative is `bashdb`.
+
+* [Linux Fu: Debugging Bash Scripts](https://hackaday.com/2019/12/11/linux-fu-debugging-bash-scripts/)
+
 ### References / Sources
 * [Advanced Bash-Scripting Guide: Aliases](http://tldp.org/LDP/abs/html/aliases.html})
 * [Advanced Bash-Scripting Guide: Functions](http://tldp.org/LDP/abs/html/functions.html)
