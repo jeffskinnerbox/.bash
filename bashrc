@@ -72,6 +72,8 @@ export PATH=$PATH:$GOPATH/bin
 
 
 ################## Setup for Python Development Environments ##################
+# you first must do the following install -
+#   curl -s https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
@@ -79,11 +81,14 @@ eval "$(pyenv virtualenv-init -)"
 
 
 #################### Setup for Python Virtual Environments ####################
-# you first must do the following install - pip install virtualenvwrapper
-#if [ -f ${HOME}/.bash/virtualenvwrapper.sh ]; then
-#    export WORKON_HOME="$HOME/.virtualenvs"
-#    source ${HOME}/.bash/virtualenvwrapper.sh
-#fi
+# you first must do the following install -
+#   pip install virtualenv virtualenvwrapper
+#   mkdir ~/.virtualenvs
+if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
+    export WORKON_HOME="$HOME/.virtualenvs"
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    source /usr/local/bin/virtualenvwrapper.sh
+fi
 
 
 
