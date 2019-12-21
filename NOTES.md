@@ -230,6 +230,19 @@ add files (or remove) that are required, and then do the commit to the local git
     git commit --dry-run
     git commit -m <comment>
 
+### Adding a Submodule to Git Repository
+Git allows you to include other Git repositories called submodules into a repository.
+Submodules are Git repositories nested inside a parent Git repository
+at a specific path in the parent repository’s working directory.
+A submodule can be located anywhere in a parent Git repository’s working directory
+and is configured via a `.gitmodules` file located at the root of the parent repository.
+This file contains which paths are submodules and what URL
+should be used when cloning and fetching for that submodule.
+Submodule support includes support for adding, updating, synchronizing, and cloning submodules.
+
+* https://www.vogella.com/tutorials/GitSubmodules/article.html
+* https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
+
 #### Store Credentials Within Git
 To add a new remote,
 use the `git remote add` command on the terminal,
@@ -324,7 +337,6 @@ Now to push your files to the GitHub repository
 Copy this Git repository into your local systems:
 
 ================================================================================
-
 time to install my personal tools on another device.
 
 ```bash
