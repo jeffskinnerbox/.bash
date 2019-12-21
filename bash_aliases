@@ -79,6 +79,10 @@ fi
 alias mv='mv -i'
 alias cp='cp -i'
 
+# copy a direct to new location, copy recursively and preserve the file/directory attributes
+alias cpdir='cp -ra'
+
+# informative commands about you OS environment or computer
 alias meminfo='free -m -l -t'
 alias psmem10='ps auxf | sort -nr -k 4 | head -10'  # top 10 processes eating memory
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'  # top 10 processes eating CPU
