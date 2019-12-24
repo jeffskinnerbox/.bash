@@ -9,6 +9,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 
 * [Getting started with Git: Terminology 101](https://opensource.com/article/19/2/git-terminology)
 * [Getting started with Git and GitHub: the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
+* [Become a git guru](https://www.atlassian.com/git/tutorials)
 * [The Architecture and History of Git: A Distributed Version Control System](https://medium.com/@willhayjr/the-architecture-and-history-of-git-a-distributed-version-control-system-62b17dd37742)
 * [How not to be afraid of GIT anymore](https://medium.freecodecamp.org/how-not-to-be-afraid-of-git-anymore-fe1da7415286)
 * [git - the simple guide](http://rogerdudler.github.io/git-guide/)
