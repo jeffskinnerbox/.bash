@@ -7,6 +7,7 @@ Version:      1.1.0
 In here are instructions on the creation, maintenance, and use of this repository
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
+* [Gitting Started With Git](https://dzone.com/articles/gitting-started-with-git)
 * [Getting started with Git: Terminology 101](https://opensource.com/article/19/2/git-terminology)
 * [Getting started with Git and GitHub: the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
 * [Become a git guru](https://www.atlassian.com/git/tutorials)
@@ -18,7 +19,9 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [The most useful git commands](https://orga.cat/posts/most-useful-git-commands)
 * [git - the simple guide just a simple guide for getting started with git. no deep shit ;)](http://rogerdudler.github.io/git-guide/)
 * [10 Git Commands You Should Know](https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c)
+* [6 handy Bash scripts for Git](https://opensource.com/article/20/1/bash-scripts-git)
 * [Useful tricks you might not know about Git stash](https://medium.freecodecamp.org/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a)
+* [10 resources to boost your Git skills](https://opensource.com/article/19/12/git-resources)
 * [Git Tutorial](http://fab.cba.mit.edu/classes/4.140/doc/git/)
 * [What is git?](http://fab.cba.mit.edu/classes/863.16/doc/tutorials/version_control/index.html)
 * [The most useful git commands](https://orga.cat/posts/most-useful-git-commands)
@@ -329,6 +332,48 @@ the remote repository (i.e. GitHub):
 Now to push your files to the GitHub repository
 
     git push -u origin master
+
+================================================================================
+
+# Branching
+To create and checkout a new branch, do the following:
+
+```bash
+# create a new branch
+git branch <branch>
+
+# checkout a branch
+git checkout <branch>
+
+# create a new branch and switch to it at the same time
+git checkout -b <branch>
+```
+
+# Basic Merging
+Suppose you’ve decided that you work is complete on branch <branch>
+and your ready to be merged into your master branch.
+All you have to do is check out the branch you wish to merge into,
+master in our case, and then run the `git merge` command:
+
+```bash
+git checkout master
+
+git merge <branch>
+```
+
+# Basic Merge Conflicts
+If you changed the same part of the same file differently in the two branches you’re merging,
+Git won’t be able to merge them cleanly.
+You’ll get a merge conflict that looks something like this:
+
+```bash
+$ git merge <branch>
+Auto-merging index.html
+CONFLICT (content): Merge conflict in index.html
+Automatic merge failed; fix conflicts and then commit the result.
+```
+
+* https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging
 
 ================================================================================
 
