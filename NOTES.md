@@ -38,6 +38,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Most common Git mistakes and how to fix them](https://medium.com/@i_AnkurBiswas/common-git-mistakes-and-how-to-fix-them-10184cd5fa77)
 * [How to use Tig to browse Git logs](https://opensource.com/article/19/6/what-tig)
 * [More productive Git: Tips for acquiring Git super powers](https://increment.com/open-source/more-productive-git/)
+* [My Most Used Git Commands on Open Source Projects](https://dzone.com/articles/my-most-used-git-commands-on-open-source-projects)
 
 * [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
 * [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
@@ -45,6 +46,10 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Git: An Intermediate Guide (Part 1)](https://dzone.com/articles/git-an-intermediate-guide-part-1)
 * [The Advanced Git Guide: Git Stash, Reset, Rebase, and More](https://www.toptal.com/git/the-advanced-git-guide)
 * [Pro Git: The Book](https://git-scm.com/book/en/v2)
+
+* [hub is an extension to command-line git](https://hub.github.com/)
+* [Oh Shit, Git!?!](https://ohshitgit.com/)
+* [git-undo: A way to unfuck your git repo](https://github.com/bjonnh/git-undo)
 
 ## Managing the Git Repository and GitHub
 * [Follow these simple rules and you’ll become a Git and GitHub master](https://medium.freecodecamp.org/follow-these-simple-rules-and-youll-become-a-git-and-github-master-e1045057468f)
