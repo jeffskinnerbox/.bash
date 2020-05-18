@@ -75,8 +75,8 @@ export PATH=$PATH:$GOPATH/bin
 # you first must do the following install -
 #   curl -s https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
+#eval "$(pyenv init -)"
+#eval "$(pyenv virtualenv-init -)"
 
 # you first must do the following install -
 #   git clone https://github.com/pyenv/pyenv.git ~/.pyenv
