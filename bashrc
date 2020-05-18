@@ -78,6 +78,10 @@ export PATH="$HOME/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
+# you first must do the following install -
+#   git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 
 
 #################### Setup for Python Virtual Environments ####################
