@@ -101,6 +101,7 @@ curl -u 'jeffskinnerbox' -d "{\"name\":\"github-name\", \"description\":\"github
 
 Now push this repository from the command line:
 
+    git remote add origin https://github.com/jeffskinnerbox/github-name.git
     git push -u origin master
 
 ### Creating Your Remote GitHub Repository
