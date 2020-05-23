@@ -71,7 +71,7 @@ and open a new Pull Request to merge the feature branch code with the master bra
 
 ================================================================================
 
-### Creating the GitHub Repository
+### Creating the GitHub (aka Remote) Repository
 Goto GitHub and create the new repository
 
     goto https://github.com/jeffskinnerbox
@@ -85,9 +85,22 @@ To do this from the commandline, let first create the local git repository:
     git add --all
     git commit -m "first commit"
 
+Create a new repository on GitHub for your project.
+Below I do this via an API call but you could also do this manually on GitHub.
+
+```bash
+# create the remote repository from the command line
+# username & password authentication is deprecated as of 11/13/2020
+# https://developer.github.com/changes/2020-02-14-deprecating-password-auth/
+# https://help.github.com/en/github/authenticating-to-github/creating-a-personal-access-token-for-the-command-line
+curl -u 'jeffskinnerbox' -d "{\"name\":\"github-name\", \"description\":\"github description\"}" https://api.github.com/user/repos
+
+# if you wish to delete this same repository, go to github and do it manually via instructions below
+# https://help.github.com/en/github/administering-a-repository/deleting-a-repository
+```
+
 Now push this repository from the command line:
 
-    curl -u 'jeffskinnerbox' https://api.github.com/user/repos -d "{\"name\":\"nonexistent-project\"}"
     git push -u origin master
 
 ### Creating Your Remote GitHub Repository
