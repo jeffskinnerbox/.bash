@@ -177,10 +177,6 @@ export SPLUNK_HOME
 #    PATH="${HOME}/bin:${PATH}"
 #fi
 
-# Added by the Heroku Toolbelt
-PATH="$PATH:/usr/local/heroku/bin"
-export PATH
-
 # Set MANPATH so it includes users' private man if it exists
 if [ -d "${HOME}/man" ]; then
     MANPATH="${HOME}/man:${MANPATH}"
