@@ -165,20 +165,16 @@ shopt -s cmdhist           # save multiple-line commands in history
 
 ################################## Set Paths ##################################
 # Set PYTHONPATH so it includes user's private bin if it exists
-if [ -d "${HOME}/.local/bin" ]; then
-    PYTHONPATH="${HOME}/.local/bin"
-fi
-export PYTHONPATH
-
 # added python path to standard path to pickup shebang files
-PATH="$PATH:$PYTHONPATH"
-export PATH
+if [ -d "${HOME}/.local/bin" ]; then
+    export PYTHONPATH="${HOME}/.local/bin"
+    export PATH="$PATH:$PYTHONPATH"
+fi
 
 # Set SPLUNK_HOME if your have installed splunk
 if [ -d "/opt/splunk" ]; then
-    SPLUNK_HOME="/opt/splunk"
+    export SPLUNK_HOME="/opt/splunk"
 fi
-export SPLUNK_HOME
 
 # Set PATH so it includes user's private bin if it exists
 #if [ -d "${HOME}/bin" ]; then
