@@ -89,8 +89,16 @@ export PATH="$PYENV_ROOT/bin:$PATH"
 #   pip install virtualenv virtualenvwrapper
 #   mkdir ~/.virtualenvs
 if [ -f /usr/local/bin/virtualenvwrapper.sh ]; then
-    export WORKON_HOME="$HOME/.virtualenvs"
+    export PROJECT_HOME=$HOME/Devel
+    export WORKON_HOME=$HOME/.virtualenvs
     export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    export VIRTUALENVWRAPPER_VIRTUALENV=/usr/local/bin/virtualenv
+    source /usr/local/bin/virtualenvwrapper.sh
+elif [ -f $HOME/.local/bin/virtualenvwrapper.sh ]; then
+    export PROJECT_HOME=$HOME/Devel
+    export WORKON_HOME=$HOME/.virtualenvs
+    export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+    export VIRTUALENVWRAPPER_VIRTUALENV=$HOME/.local/bin/virtualenv
     source /usr/local/bin/virtualenvwrapper.sh
 fi
 
