@@ -16,7 +16,9 @@
 # If not running interactively, don't do anything and just leave
 case $- in
     *i*) ;;
-      *) echo "WARNING: Non-interactive shell, so .bashrc is not invoked!"; return;;
+      *) return;;
+# caused vagrant to crash when provisioning as root
+#      *) echo "WARNING: Non-interactive shell, so .bashrc is not invoked!"; return;;
 esac
 
 
