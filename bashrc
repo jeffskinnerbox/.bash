@@ -16,7 +16,7 @@
 # If not running interactively, don't do anything and just leave
 case $- in
     *i*) ;;
-      *) echo "Non-interactive shell, so .bashrc is not invoked!"; return;;
+      *) echo "WARNING: Non-interactive shell, so .bashrc is not invoked!"; return;;
 esac
 
 
