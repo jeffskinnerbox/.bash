@@ -266,8 +266,9 @@ This file contains which paths are submodules and what URL
 should be used when cloning and fetching for that submodule.
 Submodule support includes support for adding, updating, synchronizing, and cloning submodules.
 
-* https://www.vogella.com/tutorials/GitSubmodules/article.html
-* https://chrisjean.com/git-submodules-adding-using-removing-and-updating/
+* [Managing Git projects with submodules and subtrees](https://opensource.com/article/20/5/git-submodules-subtrees)
+* [Using submodules in Git - Tutorial](https://www.vogella.com/tutorials/GitSubmodules/article.html)
+* [Git Submodules: Adding, Using, Removing, Updating](https://chrisjean.com/git-submodules-adding-using-removing-and-updating/)
 
 #### Store Credentials Within Git
 To add a new remote,
