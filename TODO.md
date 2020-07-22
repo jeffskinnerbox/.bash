@@ -13,6 +13,7 @@ Version:      1.1.0
 * [bash-it](https://github.com/revans/bash-it)
 * [Advanced Bash-Scripting GuideAdvanced Bash-Scripting Guide](http://tldp.org/LDP/abs/html/)
 * [FULL 256 COLOR SUPPORT FOR VIM AND/OR XTERM ON UBUNTU 12.04](http://emerg3nc3.wordpress.com/2012/07/28/full-256-color-support-for-vim-andor-xterm-on-ubuntu-12-04/)
+* [Why I stick with xterm](https://opensource.com/article/20/7/xterm)
 * [Working more productively with bash](http://www.caliban.org/bash)
 * [SHELLdorado - your UNIX shell scripting resource](http://www.shelldorado.com/scripts/categories.html)
 * [dotfiles.org](http://www.dotfiles.org)
