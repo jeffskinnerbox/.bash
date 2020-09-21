@@ -7,6 +7,14 @@ Version:      1.1.0
 In here are instructions on the creation, maintenance, and use of this repository
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
+# Getting Started
+* [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
+* [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
+* [Top 20 Git Commands With Examples](https://dzone.com/articles/top-20-git-commands-with-examples)
+* [Git: An Intermediate Guide (Part 1)](https://dzone.com/articles/git-an-intermediate-guide-part-1)
+* [The Advanced Git Guide: Git Stash, Reset, Rebase, and More](https://www.toptal.com/git/the-advanced-git-guide)
+* [Pro Git: The Book](https://git-scm.com/book/en/v2)
+
 * [Gitting Started With Git](https://dzone.com/articles/gitting-started-with-git)
 * [Getting started with Git: Terminology 101](https://opensource.com/article/19/2/git-terminology)
 * [Getting started with Git and GitHub: the complete beginner’s guide](https://towardsdatascience.com/getting-started-with-git-and-github-6fcd0f2d4ac6)
@@ -41,18 +49,20 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [My Most Used Git Commands on Open Source Projects](https://dzone.com/articles/my-most-used-git-commands-on-open-source-projects)
 * [4 Git scripts I can't live without](https://opensource.com/article/20/4/git-extras)
 
-* [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
-* [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
-* [Top 20 Git Commands With Examples](https://dzone.com/articles/top-20-git-commands-with-examples)
-* [Git: An Intermediate Guide (Part 1)](https://dzone.com/articles/git-an-intermediate-guide-part-1)
-* [The Advanced Git Guide: Git Stash, Reset, Rebase, and More](https://www.toptal.com/git/the-advanced-git-guide)
-* [Pro Git: The Book](https://git-scm.com/book/en/v2)
-
 * [hub is an extension to command-line git](https://hub.github.com/)
 * [Oh Shit, Git!?!](https://ohshitgit.com/)
 * [git-undo: A way to unfuck your git repo](https://github.com/bjonnh/git-undo)
 
 * [The life-changing magic of git rebase -i](https://opensource.com/article/20/4/git-rebase-i)
+
+## Security
+* [GitHub’s Move Away From Passwords: A Sign Of Things To Come?](https://hackaday.com/2020/09/15/githubs-move-away-from-passwords-a-sign-of-things-to-come/#more-431026)
+
+
+
+-------
+
+
 
 ## Managing the Git Repository and GitHub
 * [Follow these simple rules and you’ll become a Git and GitHub master](https://medium.freecodecamp.org/follow-these-simple-rules-and-youll-become-a-git-and-github-master-e1045057468f)
