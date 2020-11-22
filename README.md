@@ -89,10 +89,4 @@ To clone these Bash scripts and use them on another system, execute the followin
 [01]:https://www.gnu.org/software/bash/
 [02]:https://www.digitalocean.com/community/tutorials/how-to-work-with-the-python-interactive-console
 [03]:https://tiswww.case.edu/php/chet/readline/rltop.html
-[04]:
-[05]:
-[06]:
-[07]:
-[08]:
-[09]:
-[10]:
+
