@@ -81,6 +81,7 @@ Icon?
 ehthumbs.db
 Thumbs.db
 
-### Vagrant directory
+### Vagrant files & directory
+*.box
 .vagrant
 
