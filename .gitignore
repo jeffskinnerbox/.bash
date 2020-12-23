@@ -9,7 +9,7 @@
 #    that, when matched, the coresponding file will NOT be include in Git processing.
 #
 # DOCUMENTATION:
-#    Somebasic rules to help you to set up your .gitignore file correctly:
+#    Some basic rules to help you to set up your .gitignore file correctly:
 #
 #      * Any line that starts with a hash (#) is a comment.
 #      * The \ character escapes special characters.
@@ -23,7 +23,7 @@
 #      * Adding / on the end ignores entire directory paths.
 #
 # SOURCE:
-# https://git-scm.com/docs/gitignore
+#   https://git-scm.com/docs/gitignore
 
 
 ### --------------------------- Project Specific --------------------------- ###
