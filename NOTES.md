@@ -55,6 +55,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [git-undo: A way to unfuck your git repo](https://github.com/bjonnh/git-undo)
 
 * [The life-changing magic of git rebase -i](https://opensource.com/article/20/4/git-rebase-i)
+* [3 Tools and 2 Commands to Improve Your Git Workflow](https://mykola-harmash.medium.com/3-tools-and-2-commands-to-improve-your-git-workflow-92a858fa7ed2)
 
 ## Security
 * [GitHub’s Move Away From Passwords: A Sign Of Things To Come?](https://hackaday.com/2020/09/15/githubs-move-away-from-passwords-a-sign-of-things-to-come/#more-431026)
