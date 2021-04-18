@@ -59,8 +59,56 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [3 reasons I use the Git cherry-pick command](https://opensource.com/article/21/3/git-cherry-pick)
 
 ## Security
-* [GitHub’s Move Away From Passwords: A Sign Of Things To Come?](https://hackaday.com/2020/09/15/githubs-move-away-from-passwords-a-sign-of-things-to-come/#more-431026)
+[Starting August 13, 2021][07], GitHub requires use of
+[token-based authentication for all authenticated Git operations][08].
+At that time, GitHub will no longer accept account passwords when authenticating Git operations on `GitHub.com`.
+You will be unaffected by this change:
 
+* If you have [two-factor authentication][05] enabled for your account,
+you are already required to use token- or SSH-based authentication.
+* If you use GitHub Enterprise Server, we have not announced any changes to our on-premises offering.
+* If you maintain a [GitHub App][06], GitHub Apps do not support password authentication.
+
+So for someone like myself using Git on my home PC and pushing/pulling/cloding/forking with a password to GitHub,
+I need to create a personal access token to use in place of a password with the command line or with the API.
+Personal access tokens (PAT) function like ordinary OAuth access tokens.
+They can be used instead of a password for Git over HTTPS,
+or can be used to authenticate to the API over Basic Authentication.
+To learn how to setup and use a personal access token, go to [here][09].
+
+>**NOTE:** As a security precaution,
+>GitHub automatically removes personal access tokens that haven't been used in a year.
+
+Once you have a token,
+you can enter it instead of your password when performing Git operations over HTTPS.
+For example, on the command line you would enter the following:
+
+```bash
+$ git clone https://github.com/username/repo.git
+Username: <your_username>
+Password: <your_token>
+```
+
+>**NOTE:** Personal access tokens can only be used for HTTPS Git operations.
+>If your repository uses an SSH remote URL, you will need to [switch the remote from SSH to HTTPS][10].
+
+You can avoid being prompted for your username and password by configuring Git
+to cache your credentials for you.
+Once you've configured credential caching,
+Git automatically uses your cached personal access token when you pull or push a repository using HTTPS.
+You can learn how to caching your GitHub credentials in Git [here][11].
+For Linux, you turn on credential cashing via
+
+```bash
+# in terminal, enter the following
+# by default, Git will cache your password for 15 minutes
+git config --global credential.helper cache
+
+# set git to use the credential memory cache
+# to change the default password cache timeout, enter the following
+# set the cache to timeout after 1 hour (setting is in seconds)
+git config --global credential.helper 'cache --timeout=3600'
+```
 
 
 -------
@@ -472,9 +520,19 @@ pyenv rehash                # assure the pyenv shims are updated
 [02]:https://github.com/
 [03]:http://blog.smalleycreative.com/tutorials/using-git-and-github-to-manage-your-dotfiles/
 [04]:http://blog.sanctum.geek.nz/managing-dot-files-with-git/
-[05]:
-[06]:
-[07]:
-[08]:
-[09]:
-[10]:
+[05]:https://docs.github.com/en/github/authenticating-to-github/securing-your-account-with-two-factor-authentication-2fa
+[06]:https://docs.github.com/en/developers/apps/about-apps#about-github-apps
+[07]:https://hackaday.com/2020/09/15/githubs-move-away-from-passwords-a-sign-of-things-to-come/#more-431026
+[08]:https://github.blog/2020-12-15-token-authentication-requirements-for-git-operations/
+[09]:https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
+[10]:https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories#switching-remote-urls-from-ssh-to-https
+[11]:https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git
+[12]:
+[13]:
+[14]:
+[15]:
+[16]:
+[17]:
+[18]:
+[19]:
+[20]:
