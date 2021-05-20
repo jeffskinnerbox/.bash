@@ -11,6 +11,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
 * [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
 * [Top 20 Git Commands With Examples](https://dzone.com/articles/top-20-git-commands-with-examples)
+* [Top 35 Git Commands With Examples](https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus)
 * [Git: An Intermediate Guide (Part 1)](https://dzone.com/articles/git-an-intermediate-guide-part-1)
 * [The Advanced Git Guide: Git Stash, Reset, Rebase, and More](https://www.toptal.com/git/the-advanced-git-guide)
 * [Pro Git: The Book](https://git-scm.com/book/en/v2)
@@ -57,6 +58,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [The life-changing magic of git rebase -i](https://opensource.com/article/20/4/git-rebase-i)
 * [3 Tools and 2 Commands to Improve Your Git Workflow](https://mykola-harmash.medium.com/3-tools-and-2-commands-to-improve-your-git-workflow-92a858fa7ed2)
 * [3 reasons I use the Git cherry-pick command](https://opensource.com/article/21/3/git-cherry-pick)
+* [5 commands to level-up your Git game](https://opensource.com/article/21/4/git-commands)
 
 ## Security
 [Starting August 13, 2021][07], GitHub requires use of
