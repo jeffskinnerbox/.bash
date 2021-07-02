@@ -54,6 +54,15 @@ operations, that performs a specified task. Wherever there is repetitive code,
 when a task repeats with only slight variations in procedure, then consider
 using a function.
 
+### PS1 Prompt Generator
+There are several variables that can be set to control the appearance of the
+bash command prompt: PS1, PS2, PS3, PS4 and PROMPT_COMMAND.
+The tools below help you create these varables for your `.bashrc` file.
+
+* [.bashrc/PS1 generator](http://bashrcgenerator.com/)
+* [$ _ Bash Prompt Generator](https://scriptim.github.io/bash-prompt-generator/)
+* [How-to: Setup Prompt Statement variables](https://ss64.com/bash/syntax-prompt.html)
+
 ### Debuging Bash Scripts
 You can get a trace of the entire execution of a running script by adding
 the `-x` option to its invocation of bash (e.g. `bash -x`),
