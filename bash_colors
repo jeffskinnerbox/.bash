@@ -2,8 +2,8 @@
 # Version:      1.1.0
 #
 # DESCRIPTION:
-# This script contains exscape characters to change character colors on the terminal
-# and shoulc be sourced in the Bash resource file, .bashrc
+# This script contains escape characters to change character colors on the terminal
+# and should be sourced in the Bash resource file, .bashrc
 #
 # USAGE:
 #   1. Save this file as ~/.bash/bash_colors
