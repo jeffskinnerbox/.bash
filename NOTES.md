@@ -98,7 +98,7 @@ You can avoid being prompted for your username and password by configuring Git
 to cache your credentials for you.
 Once you've configured credential caching,
 Git automatically uses your cached personal access token when you pull or push a repository using HTTPS.
-You can learn how to caching your GitHub credentials in Git [here][11].
+You can learn how to caching your GitHub credentials in Git [here][11] and [here][12].
 For Linux, you turn on credential cashing via
 
 ```bash
@@ -529,7 +529,7 @@ pyenv rehash                # assure the pyenv shims are updated
 [09]:https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token
 [10]:https://docs.github.com/en/github/getting-started-with-github/managing-remote-repositories#switching-remote-urls-from-ssh-to-https
 [11]:https://docs.github.com/en/github/getting-started-with-github/caching-your-github-credentials-in-git
-[12]:
+[12]:https://www.edgoad.com/2021/02/using-personal-access-tokens-with-git-and-github.html
 [13]:
 [14]:
 [15]:
