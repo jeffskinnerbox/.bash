@@ -63,7 +63,7 @@ export AVR_TOOLS_DIR=/home/jeff/src/arduino-Nov-5-2018/hardware/tools/avr  # dir
 
 
 ######################## Setup for Ansible Environment #########################
-export ANSIBLE_ROLES_PATH="$HOME/src/ansible-roles"
+#export ANSIBLE_ROLES_PATH="$HOME/src/ansible-roles"
 
 
 
@@ -77,6 +77,7 @@ export PATH=$PATH:$GOPATH/bin
 # you first must do the following install -
 #   curl -s https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 export PATH="$HOME/.pyenv/bin:$PATH"
+export PATH="$HOME/.local/bin:$PATH"
 #eval "$(pyenv init -)"
 #eval "$(pyenv virtualenv-init -)"
 
