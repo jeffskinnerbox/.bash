@@ -8,6 +8,7 @@ In here are instructions on the creation, maintenance, and use of this repositor
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
 # Getting Started
+* [GitHub Guides](https://guides.github.com/activities/hello-world/)
 * [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
 * [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
 * [Top 20 Git Commands With Examples](https://dzone.com/articles/top-20-git-commands-with-examples)
