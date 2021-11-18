@@ -73,6 +73,12 @@ An alternative is `bashdb`.
 
 * [Linux Fu: Debugging Bash Scripts](https://hackaday.com/2019/12/11/linux-fu-debugging-bash-scripts/)
 
+# Bash History
+During a terminal session, you’ll likely be repeating some commands often, and typing variations on those commands even more frequently.
+Luckily, the bash shell has some fairly well-developed history functions. Learning how to effectively use and manipulate your bash history will allow you to spend less time typing and more time getting actual work done.
+
+* [How To Use Bash History Commands and Expansions on a Linux VPS](https://www.digitalocean.com/community/tutorials/how-to-use-bash-history-commands-and-expansions-on-a-linux-vps)
+
 ### References / Sources
 * [Advanced Bash-Scripting Guide: Aliases](http://tldp.org/LDP/abs/html/aliases.html})
 * [Advanced Bash-Scripting Guide: Functions](http://tldp.org/LDP/abs/html/functions.html)
