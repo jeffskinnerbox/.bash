@@ -29,6 +29,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [The most useful git commands](https://orga.cat/posts/most-useful-git-commands)
 * [git - the simple guide just a simple guide for getting started with git. no deep shit ;)](http://rogerdudler.github.io/git-guide/)
 * [10 Git Commands You Should Know](https://towardsdatascience.com/10-git-commands-you-should-know-df54bea1595c)
+* [10 Git tutorials to level up your open source skills in 2022](https://opensource.com/article/22/1/git-tutorials)
 * [6 handy Bash scripts for Git](https://opensource.com/article/20/1/bash-scripts-git)
 * [Useful tricks you might not know about Git stash](https://medium.freecodecamp.org/useful-tricks-you-might-not-know-about-git-stash-e8a9490f0a1a)
 * [10 resources to boost your Git skills](https://opensource.com/article/19/12/git-resources)
