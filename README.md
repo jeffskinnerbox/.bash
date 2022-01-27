@@ -84,6 +84,7 @@ Luckily, the bash shell has some fairly well-developed history functions. Learni
 * [Advanced Bash-Scripting Guide: Functions](http://tldp.org/LDP/abs/html/functions.html)
 * [Hayne of Tintagel](http://hayne.net/MacDev/Bash/aliases.bash)
 * [30 Handy Bash Shell Aliases For Linux](http://www.cyberciti.biz/tips/bash-aliases-mac-centos-linux-unix.html)
+* [Linux Fu: Bash Strings](https://hackaday.com/2022/01/26/linux-fu-bash-strings/)
 
 ### Install
 To clone these Bash scripts and use them on another system, execute the following:

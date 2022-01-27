@@ -188,50 +188,50 @@ Make the .bash directory, move into it, and initialize it as a git repository
 
 Now create the README, bash_aliases, bash_logout, bash_profile, and bashrc files.
 
-Also create the file .gitignore like this:
-
-    ### ---------- Project Specific ---------- ###
-
-
-    ### ---------- General ---------- ###
-
-    ### Compiled Source ###
-    *.pyc
-    *.com
-    *.class
-    *.dll
-    *.exe
-    *.o
-    *.so
-
-    ### Packages ###
-    *.7z
-    *.dmg
-    *.gz
-    *.iso
-    *.jar
-    *.rar
-    *.tar
-    *.zip
-
-    ### Logs & Databases ###
-    *.log
-    *.sql
-    *.sqlite
-
-    ### OS Generated Files ###
-    *.out
-    *.swp
-    .DS_Store
-    .DS_Store?
-    ._*
-    .Spotlight-V100
-    .Trashes
-    Icon?
-    ehthumbs.db
-    Thumbs.db
+Also create the file `.gitignore` like this:
 
 ```bash
+### ---------- Project Specific ---------- ###
+
+
+### ---------- General ---------- ###
+
+### Compiled Source ###
+*.pyc
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+### Packages ###
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+### Logs & Databases ###
+*.log
+*.sql
+*.sqlite
+
+### OS Generated Files ###
+*.out
+*.swp
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
 ### ------------------------- Project Specific ------------------------- ###
 
 ### Videos & Images ###
@@ -352,8 +352,8 @@ in the directory your repository is stored at.
     git push -u origin master
 
 >**NOTE**: Other operations
-[rename an existing remote](https://help.github.com/articles/renaming-a-remote/),
-[delete an existing remote](https://help.github.com/articles/removing-a-remote/).
+>[rename an existing remote](https://help.github.com/articles/renaming-a-remote/),
+>[delete an existing remote](https://help.github.com/articles/removing-a-remote/).
 
 
 ### Updating the Remote Repository (i.e. GitHub)
