@@ -306,21 +306,28 @@ function wifi_scan {
 # EXPERIMENTAL
 # ping sweep, without nmap, to get IP & MAC for networks entire set of devices
 # commandline version: (echo -e "IP Address\tMAC Address" ; prefix="192.168.1" && for i in `seq 254`; do (sleep 0.5 && ping -c1 -w1 $prefix.$i &> /dev/null && arp -n | awk ' /'$prefix'.'$i' / { print $1 "\t" $3 } ') & done; wait)
+#function ip_scan {
+    ## capture the IP address prefix for your network - e.g. prefix="192.168.1"
+    #prefix=$(ip route get 8.8.8.8 | awk '{print $3; exit}' | cut -d'.' -f 1,2,3)
+
+    ## header for ping sweep
+    #echo -e "IP Address\tMAC Address"
+
+    ## perform ping sweep
+    #for i in `seq 254`;
+    #do
+        #(sleep 0.5 && ping -c1 -w1 $prefix.$i &> /dev/null && arp -n | awk ' /'$prefix'.'$i' / { print $1 "\t" $3 } ') &
+    #done
+
+    ## waits for all pings to complete
+    #wait
+#}
 function ip_scan {
-    # capture the IP address prefix for your network - e.g. prefix="192.168.1"
-    prefix=$(ip route get 8.8.8.8 | awk '{print $3; exit}' | cut -d'.' -f 1,2,3)
-
-    # header for ping sweep
-    echo -e "IP Address\tMAC Address"
-
-    # perform ping sweep
-    for i in `seq 254`;
-    do
-        (sleep 0.5 && ping -c1 -w1 $prefix.$i &> /dev/null && arp -n | awk ' /'$prefix'.'$i' / { print $1 "\t" $3 } ') &
-    done
-
-    # waits for all pings to complete
-    wait
+    # print the headings
+    echo "FQDN IP-Address MEC-Address NIC" | awk '{ printf("%-45s %-15s %-19s %-8s\n", $1, $2, $3, $4) }'
+    
+    # print fqdn, ip address, mac address, nic
+    arp -a | sed 's/(// ;  s/)//' | awk '{ printf("%-45s %-15s %-19s %-8s\n", $1, $2, $4, $7) }' | sort -k3
 }
 
 # EXPERIMENTAL
