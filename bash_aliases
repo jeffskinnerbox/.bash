@@ -324,7 +324,6 @@ function wifi_scan {
 #}
 
 # EXPERIMENTAL
-# clear out the full arp cache with --> sudo ip -s -s neigh flush all
 # https://linux-audit.com/how-to-clear-the-arp-cache-on-linux/
 # https://www.networkworld.com/article/3601692/checking-network-connections-with-arp-and-ip-neigh.html
 # https://www.webservertalk.com/what-is-the-arp-command-how-to-use-it-tutorial/
@@ -334,6 +333,9 @@ function ip_scan {
 
     # print fqdn, ip address, mac address, nic
     arp -a | sed 's/(// ;  s/)//' | awk '{ printf("%-45s %-15s %-19s %-8s\n", $1, $2, $4, $7) }' | sort -k3
+
+    # message concerning cleaning the cache
+    echo -e "\nNOTE: Clear out the arp cache with 'sudo ip -s -s neigh flush all'"
 }
 
 # EXPERIMENTAL
