@@ -327,6 +327,7 @@ function wifi_scan {
 # https://linux-audit.com/how-to-clear-the-arp-cache-on-linux/
 # https://www.networkworld.com/article/3601692/checking-network-connections-with-arp-and-ip-neigh.html
 # https://www.webservertalk.com/what-is-the-arp-command-how-to-use-it-tutorial/
+# https://null-byte.wonderhowto.com/how-to/use-abuse-address-resolution-protocol-arp-locate-hosts-network-0150333/
 function ip_scan {
     # print the headings
     echo "FQDN IP-Address MEC-Address NIC" | awk '{ printf("%-45s %-15s %-19s %-8s\n", $1, $2, $3, $4) }'
