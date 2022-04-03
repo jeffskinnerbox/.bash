@@ -143,7 +143,7 @@ function term_title {
 
 # This function will be automatically run upon exit of shell
 function _exit {
-    echo -e "${BRed}Hasta la vista from $(uname -n), baby!${NColor}"
+    echo -e "${BRed}Hasta la vista from $(uname -n | cut -d '.' -f 1), baby! ${NColor}"
     sleep 1
 }
 trap _exit EXIT
