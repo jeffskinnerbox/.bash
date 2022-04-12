@@ -8,6 +8,7 @@ In here are instructions on the creation, maintenance, and use of this repositor
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
 # Getting Started
+* [Git Cheat Sheet](https://opensource.com/sites/default/files/2022-04/OSDC_cheatsheet-git-2022.4.7.pdf)
 * [GitHub Guides](https://guides.github.com/activities/hello-world/)
 * [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
 * [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
@@ -42,11 +43,8 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [A guide to Git branching](https://opensource.com/article/18/5/git-branching)
 * [How to adopt a Git branching strategy](https://medium.freecodecamp.org/adopt-a-git-branching-strategy-ac729ff4f838)
 * [An Efficient Git Branching Strategy Every Developer Should Know](https://medium.com/better-programming/efficient-git-branching-strategy-every-developer-should-know-f1034b1ba041)
-* [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
-* [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
 * [Advanced Git Commands: Rewriting History](https://dzone.com/articles/advanced-git-commands-rewriting-history)
 * [How to find stuff in Git](https://www.tygertec.com/find-stuff-git/)
-* [An introduction to Git merge and rebase: what they are, and how to use them](https://medium.freecodecamp.org/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f)
 * [Most common Git mistakes and how to fix them](https://medium.com/@i_AnkurBiswas/common-git-mistakes-and-how-to-fix-them-10184cd5fa77)
 * [How to use Tig to browse Git logs](https://opensource.com/article/19/6/what-tig)
 * [More productive Git: Tips for acquiring Git super powers](https://increment.com/open-source/more-productive-git/)
@@ -57,10 +55,19 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Oh Shit, Git!?!](https://ohshitgit.com/)
 * [git-undo: A way to unfuck your git repo](https://github.com/bjonnh/git-undo)
 
+* [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
+* [An introduction to Git merge and rebase: what they are, and how to use them](https://medium.freecodecamp.org/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f)
+* [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
 * [The life-changing magic of git rebase -i](https://opensource.com/article/20/4/git-rebase-i)
+* [My guide to understanding Git rebase -i](https://opensource.com/article/22/4/manage-git-commits-rebase-i-command)
+
 * [3 Tools and 2 Commands to Improve Your Git Workflow](https://mykola-harmash.medium.com/3-tools-and-2-commands-to-improve-your-git-workflow-92a858fa7ed2)
 * [3 reasons I use the Git cherry-pick command](https://opensource.com/article/21/3/git-cherry-pick)
 * [5 commands to level-up your Git game](https://opensource.com/article/21/4/git-commands)
+* [Happy anniversary, Git! Here are our favorite Git commands](https://opensource.com/article/22/4/our-favorite-git-commands)
+* [10 Git tips we can't live without](https://opensource.com/article/22/4/git-tips)
+* [How I use the Git for-each-ref command for DevOps](https://opensource.com/article/22/4/git-each-ref-command)
+* [My guide to using the Git push command safely](https://opensource.com/article/22/4/git-push)
 
 ## Security
 [Starting August 13, 2021][07], GitHub requires use of
