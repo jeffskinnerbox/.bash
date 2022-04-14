@@ -121,6 +121,23 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 ```
 
+## Remove Secrets from a Repository
+Often when creating a program that uses
+login credentials, API keys, or IP address to access some service,
+you'll hard code this information into your program.
+The proper way to handle such secret information is
+to place it in a configuration file that is read at run-time.
+This way, when the code is up loaded into GitHub, or some other public place,
+you can leave the secrets safely on your computer drive.
+But you know what happens, the first iterations of development,
+secrets are hard coded and are mistakenly sucked up into the cloud.
+
+Sources:
+
+* [How You Can Prevent Committing Secrets and Credentials Into Git Repositories](https://betterprogramming.pub/how-you-can-prevent-committing-secrets-and-credentials-into-git-repositories-adffc25c2ea2)
+* [Git How-To: Remove Your Password from a Repository](https://davidverhasselt.com/git-how-to-remove-your-password-from-a-repository/)
+* [The Easiest Way To Remove Checked In Credentials From A Git Repo](https://deshpandetanmay.medium.com/the-easiest-way-to-remove-checked-in-credentials-from-a-git-repo-704a373b94e3)
+
 
 -------
 
