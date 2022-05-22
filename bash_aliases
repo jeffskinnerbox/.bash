@@ -352,8 +352,8 @@ function my_ip {
 
 # EXPERIMENTAL
 # print the 10 top commands you use
-top_history {
-    cat $HOME/bash_history | sort | uniq -c | sort -nr | head -n 10
+function top_history {
+    cat $HOME/.bash_history | sort | uniq -c | sort -nr | head -n 10
 }
 
 # Make a new directory and change into it in one step
