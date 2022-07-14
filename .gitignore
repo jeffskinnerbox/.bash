@@ -60,6 +60,10 @@ htmlcov/
 nosetests.xml
 coverage.xml
 
+### Files containing secrets
+secret*
+secrets*
+
 ### Logs & Databases ###
 *.log
 *.sql
