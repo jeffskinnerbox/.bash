@@ -55,6 +55,12 @@ fi
 
 
 
+###################### Setup for Bash History Environment ######################
+# https://hackernoon.com/hide-the-exported-env-variables-from-the-history-it8q36i1
+export HISTCONTROL=ignorespace
+
+
+
 #################### Setup for Arduino Makefile Environment ####################
 export ARDUINO_DIR=/home/jeff/src/arduino-Nov-5-2018                       # directory where arduino is installed
 export ARDMK_DIR=/home/jeff/src/arduino-makefile                           # directory where you have copied the makefile
