@@ -8,9 +8,10 @@ In here are instructions on the creation, maintenance, and use of this repositor
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
 # Getting Started
+* [Git concepts in less than 10 minutes](https://opensource.com/article/22/11/git-concepts)
+* [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
 * [Git Cheat Sheet](https://opensource.com/sites/default/files/2022-04/OSDC_cheatsheet-git-2022.4.7.pdf)
 * [GitHub Guides](https://guides.github.com/activities/hello-world/)
-* [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
 * [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
 * [Top 20 Git Commands With Examples](https://dzone.com/articles/top-20-git-commands-with-examples)
 * [Top 35 Git Commands With Examples](https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus)
