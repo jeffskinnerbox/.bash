@@ -13,6 +13,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Git Cheat Sheet](https://opensource.com/sites/default/files/2022-04/OSDC_cheatsheet-git-2022.4.7.pdf)
 * [GitHub Guides](https://guides.github.com/activities/hello-world/)
 * [Useful Git Commands](https://dzone.com/articles/useful-git-commands)
+* [Learn Git: 3 commands to level up your skill](https://opensource.com/article/22/11/advanced-git-commands)
 * [Top 20 Git Commands With Examples](https://dzone.com/articles/top-20-git-commands-with-examples)
 * [Top 35 Git Commands With Examples](https://dzone.com/articles/top-35-git-commands-with-examples-and-bonus)
 * [Git: An Intermediate Guide (Part 1)](https://dzone.com/articles/git-an-intermediate-guide-part-1)
