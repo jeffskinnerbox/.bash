@@ -21,7 +21,7 @@ shopt -s expand_aliases
 # Short-hand commands for commonly used programs
 if [ "${OPSYS}" = 'Linux' ]; then
     # When using Vi in X11, use Vim with multiple files within separate tabs
-    if [ $XDG_SESSION_TYPE  = 'x11' ]; then
+    if [ $XDG_SESSION_TYPE  = 'x11' ] || [ $XDG_SESSION_TYPE  = 'wayland' ]; then
         if [ $(wmctrl -m | grep Name | awk '{ print $2 }') = 'i3' ]; then
             alias vi='vim -p'       # if in i3 window manager, open in current window
         else
