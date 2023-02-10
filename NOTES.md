@@ -140,6 +140,15 @@ Sources:
 * [Git How-To: Remove Your Password from a Repository](https://davidverhasselt.com/git-how-to-remove-your-password-from-a-repository/)
 * [The Easiest Way To Remove Checked In Credentials From A Git Repo](https://deshpandetanmay.medium.com/the-easiest-way-to-remove-checked-in-credentials-from-a-git-repo-704a373b94e3)
 
+### GitGuardian
+`ggshield` is a CLI application that runs in your local environment
+or in a CI environment to help you detect secrets,
+as well as other potential security vulnerabilities or policy breaks affecting your codebase.
+
+* [GitGuardian](https://www.gitguardian.com/)
+* [GitGuardian Documentation](https://docs.gitguardian.com/ggshield-docs/getting-started)
+* [GitGuardian Videos](https://www.youtube.com/channel/UCHGxYyzf4eXzpMz5kyqVZSQ)
+
 
 -------
 
