@@ -17,6 +17,7 @@ Version:      1.1.0
 * [Working more productively with bash](http://www.caliban.org/bash)
 * [SHELLdorado - your UNIX shell scripting resource](http://www.shelldorado.com/scripts/categories.html)
 * [dotfiles.org](http://www.dotfiles.org)
+* [5 escape sequences for your Linux shell](https://opensource.com/article/23/2/escape-sequences-linux-shell)
 
 ### Change / Setup bash custom prompt
 * [hange / Setup bash custom prompt](http://www.cyberciti.biz/tips/howto-linux-unix-bash-shell-setup-prompt.html)
