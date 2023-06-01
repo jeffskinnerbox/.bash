@@ -20,20 +20,25 @@ shopt -s expand_aliases
 
 # Short-hand commands for commonly used programs
 if [ "${OPSYS}" = 'Linux' ]; then
-    # When using Vi in X11, use Vim with multiple files within separate tabs
+    # When using Vi in X11, use Vim / NeoVim with multiple files within separate tabs
     if [ $XDG_SESSION_TYPE  = 'x11' ] || [ $XDG_SESSION_TYPE  = 'wayland' ]; then
         if [ $(wmctrl -m | grep Name | awk '{ print $2 }') = 'i3' ]; then
-            alias vi='vim -p'       # if in i3 window manager, open in current window
+            #alias vi='vim -p'       # if in i3 window manager, open in current window
+            alias vi='nvim -p'       # if in i3 window manager, open in current window
         else
-            alias vi='vim -g -p'    # if not in i3 window manager, use GUI mode (open new window)
+            #alias vi='vim -g -p'    # if not in i3 window manager, use GUI mode (open new window)
+            alias vi='nvim -p'    # if not in i3 window manager, use GUI mode (open new window)
         fi
     else
-        alias vi='vim'              # if window manager isn't running
+        #alias vi='vim'              # if window manager isn't running
+        alias vi='nvim'              # if window manager isn't running
     fi
 else
     # open Vim and Vi in a seperate window
-    alias vim='gnome-terminal --execute vim "$@"'
-    alias vi='vim'
+    #alias vim='gnome-terminal --execute vim "$@"'
+    #alias vi='vim'
+    alias nvim='gnome-terminal --execute nvim "$@"'
+    alias vi='nvim'
 fi
 
 alias pg='less'                         # in case your linux has less & more but no pg
