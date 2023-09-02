@@ -27,7 +27,8 @@ if [ "${OPSYS}" = 'Linux' ]; then
             alias vi='nvim -p'       # if in i3 window manager, open in current window
         else
             #alias vi='vim -g -p'    # if not in i3 window manager, use GUI mode (open new window)
-            alias vi='nvim -p'    # if not in i3 window manager, use GUI mode (open new window)
+            #alias vi='nvim -p'    # if not in i3 window manager, use GUI mode (open new window)
+            alias vi="gnome-terminal --title NeoVim -- nvim -p"
         fi
     else
         #alias vi='vim'              # if window manager isn't running
@@ -37,8 +38,8 @@ else
     # open Vim and Vi in a seperate window
     #alias vim='gnome-terminal --execute vim "$@"'
     #alias vi='vim'
-    alias nvim='gnome-terminal --execute nvim "$@"'
-    alias vi='nvim'
+    alias vi='gnome-terminal --title NeoVim --execute nvim "$@"'
+    #alias vi='nvim'
 fi
 
 alias pg='less'                         # in case your linux has less & more but no pg

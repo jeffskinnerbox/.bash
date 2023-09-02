@@ -37,6 +37,11 @@ fi
 
 
 
+######################### Define XDG_CONFIG directory ##########################
+export XDG_CONFIG_HOME=$HOME/.config
+
+
+
 ################################ Define Aliases ################################
 if [ -f $HOME/.bash/bash_aliases ]; then
     source $HOME/.bash/bash_aliases
