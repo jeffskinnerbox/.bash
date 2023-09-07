@@ -8,6 +8,7 @@ In here are instructions on the creation, maintenance, and use of this repositor
 via [git][01] and [GitHub][02].  For more information, check out these posts:
 
 # Getting Started
+* [Git Credentials](https://medium.com/@saravra/git-credentials-33cfdcb6b5c5)
 * [Git concepts in less than 10 minutes](https://opensource.com/article/22/11/git-concepts)
 * [Getting Started With Git](https://dzone.com/refcardz/getting-started-git)
 * [Git Cheat Sheet](https://opensource.com/sites/default/files/2022-04/OSDC_cheatsheet-git-2022.4.7.pdf)
