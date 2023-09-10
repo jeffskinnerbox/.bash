@@ -37,8 +37,13 @@ fi
 
 
 
-######################### Define XDG_CONFIG directory ##########################
-export XDG_CONFIG_HOME=$HOME/.config
+###################### XDG Base Directory Specification ########################
+export XDG_DATA_HOME=$HOME/.local/share                 # defines the base directory relative to which user-specific data files should be stored
+export XDG_CONFIG_HOME=$HOME/.config                    # defines the base directory relative to which user-specific configuration files should be stored
+export XDG_STATE_HOME=$HOME/.local/state                # defines the base directory relative to which user-specific state files should be stored
+export XDG_CACHE_HOME=$HOME/.cache                      # defines the base directory relative to which user-specific non-essential data files should be stored
+export XDG_DATA_DIRS='/usr/local/share/:/usr/share/'    # defines the preference-ordered set of base directories to search for data files in addition to the $XDG_DATA_HOME base directory
+export XDG_CONFIG_DIRS='/etc/xdg'                       # defines the preference-ordered set of base directories to search for configuration files in addition to the $XDG_CONFIG_HOME base directory
 
 
 
