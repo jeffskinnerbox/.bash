@@ -38,12 +38,26 @@ fi
 
 
 ###################### XDG Base Directory Specification ########################
-export XDG_DATA_HOME=$HOME/.local/share                 # defines the base directory relative to which user-specific data files should be stored
-export XDG_CONFIG_HOME=$HOME/.config                    # defines the base directory relative to which user-specific configuration files should be stored
-export XDG_STATE_HOME=$HOME/.local/state                # defines the base directory relative to which user-specific state files should be stored
-export XDG_CACHE_HOME=$HOME/.cache                      # defines the base directory relative to which user-specific non-essential data files should be stored
-export XDG_DATA_DIRS='/usr/local/share/:/usr/share/'    # defines the preference-ordered set of base directories to search for data files in addition to the $XDG_DATA_HOME base directory
-export XDG_CONFIG_DIRS='/etc/xdg'                       # defines the preference-ordered set of base directories to search for configuration files in addition to the $XDG_CONFIG_HOME base directory
+# https://wiki.archlinux.org/title/XDG_Base_Directory
+export XDG_DATA_HOME="$HOME/.local/share"                 # defines the base directory relative to which user-specific data files should be stored
+export XDG_CONFIG_HOME="$HOME/.config"                    # defines the base directory relative to which user-specific configuration files should be stored
+export XDG_STATE_HOME="$HOME/.local/state"                # defines the base directory relative to which user-specific state files should be stored
+export XDG_CACHE_HOME="$HOME/.cache"                      # defines the base directory relative to which user-specific non-essential data files should be stored
+export XDG_DATA_DIRS="/usr/local/share/:/usr/share/"    # defines the preference-ordered set of base directories to search for data files in addition to the $XDG_DATA_HOME base directory
+export XDG_CONFIG_DIRS="/etc/xdg"                       # defines the preference-ordered set of base directories to search for configuration files in addition to the $XDG_CONFIG_HOME base directory
+
+
+
+################### XDG Base User Directory Specification ######################
+# https://wiki.archlinux.org/title/XDG_user_directories
+export XDG_DESKTOP_DIR="$HOME/Desktop"
+export XDG_DOCUMENTS_DIR="$HOME/Documents"
+export XDG_DOWNLOAD_DIR="$HOME/Downloads"
+export XDG_MUSIC_DIR="$HOME/Music"
+export XDG_PICTURES_DIR="$HOME/Pictures"
+export XDG_PUBLICSHARE_DIR="$HOME/Public"
+export XDG_TEMPLATES_DIR="$HOME/Templates"
+export XDG_VIDEOS_DIR="$HOME/Videos"
 
 
 
