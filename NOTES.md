@@ -58,6 +58,7 @@ via [git][01] and [GitHub][02].  For more information, check out these posts:
 * [Oh Shit, Git!?!](https://ohshitgit.com/)
 * [git-undo: A way to unfuck your git repo](https://github.com/bjonnh/git-undo)
 
+* [Linux Fu: Deep Git Rebasing](https://hackaday.com/2023/10/17/linux-fu-deep-git-rebasing/)
 * [Why you should stop using Git rebase](https://medium.com/@fredrikmorken/why-you-should-stop-using-git-rebase-5552bee4fed1)
 * [An introduction to Git merge and rebase: what they are, and how to use them](https://medium.freecodecamp.org/an-introduction-to-git-merge-and-rebase-what-they-are-and-how-to-use-them-131b863785f)
 * [How to reset, revert, and return to previous states in Git](https://opensource.com/article/18/6/git-reset-revert-rebase-commands)
