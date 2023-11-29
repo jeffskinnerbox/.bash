@@ -93,6 +93,7 @@ export AVR_TOOLS_DIR=/home/jeff/src/arduino-Nov-5-2018/hardware/tools/avr  # dir
 
 
 ######################## Setup for Ansible Environment #########################
+export ANSIBLE_CONFIG=$HOME/.ansible.cfg
 #export ANSIBLE_ROLES_PATH="$HOME/src/ansible-roles"
 
 
